@@ -9,8 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        header: '#262626', 
+        buyNow: '#82b440',
+        buyNowHover: '#7AA93C',
+        greenBody: '#034833',
+        playButtonZoom: '#046b4b',
+        getAnAppointment: '#76c644',
+        button: '#83CD20',
       },
     },
   },

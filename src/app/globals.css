@@ -2,20 +2,324 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+      /* ================= Content Box 1 left right up down moving effect */
+
+      /* Keyframes for front image moving left to right */
+      @keyframes moveFrontImage {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(15px);
+        } /* Slightly move right */
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      /* Keyframes for back image 1 moving up and down */
+      @keyframes moveBackImage1 {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        } /* Move up */
+      }
+
+      /* Keyframes for back image 2 moving up and down */
+      @keyframes moveBackImage2 {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        } /* Move up */
+      }
+
+      /* Apply animation to images */
+      .image-1 {
+        animation: moveFrontImage 2s infinite; /* Front image */
+        z-index: 10;
+      }
+
+      .image-2 {
+        animation: moveBackImage1 3s infinite; /* slower movement circle*/
+        z-index: 4;
+      }
+
+      .image-3 {
+        animation: moveBackImage2 1.5s infinite; /* Fast movement statue*/
+        z-index: 7;
+      }
+
+      /* =========================================================================================== */
+
+      /* =============== Play Button Zoom in Zoom out */
+      /* Keyframes for zoom in and zoom out */
+      @keyframes zoomInOut {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2); /* Slight zoom in */
+        }
+      }
+
+      /* Apply the animation to the play button */
+      .play-button {
+        animation: zoomInOut 2s infinite ease-in-out;
+        box-shadow: 0 0 20px rgba(143, 195, 143, 0.283); /* Greenish blur effect */
+      }
+
+      /* =================================================================================== */
+
+      /* ================== Shake the icon of the cards */
+
+      .shake-image {
+        transition: transform 0.5s ease-in-out; /* Smooth transition for the shake */
+      }
+
+      /* Shake effect in all directions */
+      @keyframes shake {
+        0% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(-2px, -2px);
+        }
+        50% {
+          transform: translate(2px, 2px);
+        }
+        75% {
+          transform: translate(-2px, 2px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
+      /* Hover effect */
+      .shake-image:hover {
+        animation: shake 0.2s ease-in-out forwards; /* Apply shake on hover */
+      }
+
+      /* ================================================================================== */
+
+      /* ==================  Apply rotation animation */
+
+      .rotate-animation {
+        animation: rotate 13s linear infinite; /* Rotate continuously */
+      }
+
+      /* Keyframes for rotation */
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg); /* Start position */
+        }
+        100% {
+          transform: rotate(360deg); /* End position */
+        }
+      }
+
+      /* =============================================================================== */
+
+      /* ===================  Swapping counter digit */
+
+      .number-container {
+        display: flex;
+        height: 100px; /* Set height based on font size */
+      }
+
+      .digit-container {
+        position: relative; /* Position for sliding effect */
+        height: 100%; /* Ensure full height */
+        display: flex;
+        flex-direction: column; /* Stack digits vertically */
+      }
+
+      .digit {
+        display: block; /* Block to apply transformations */
+        transition: transform 0.6s ease; /* Smooth transition */
+        font-size: 70px; /* Set font size */
+        color: white; /* Set text color */
+      }
+
+      .digit.up {
+        transform: translateY(-100%); /* Slide the digit up */
+      }
+
+      /* ============================================================================ */
+
+      /* ==================  Brand logos Scrolling Container */
+
+      /* Keyframe for step-based scrolling */
+      @keyframes stepScroll {
+        0% {
+          transform: translateX(0);
+        } /* Start at the first image */
+        100% {
+          transform: translateX(-100%);
+        } /* Move the container left by 100% */
+      }
+
+      /* Container for scrolling images */
+      .scroll-container {
+        display: flex;
+        animation: stepScroll 30s steps(5) infinite; /* Steps(5) for 5 images */
+        width: calc(
+          100% * 6
+        ); /* Set width to accommodate all images for smooth scrolling.  */
+      }
+
+      /* Wrapper to hide overflow */
+      .scroll-wrapper {
+        display: flex;
+        overflow: hidden;
+        width: 100%; /* Set full width of container "default 100% for lg"*/
+      }
+
+      /* Image styling */
+      .scroll-image {
+        width: 10%; /* Each image takes 20% of the full container width */
+        flex-shrink: 0; /* Prevent images from shrinking */
+      }
+
+      /* Extra duplication for smooth looping */
+      .scroll-container img {
+        display: block;
+      }
+
+      /* ====================================================================================== */
+
+      /* ===========================  Our countries */
+
+      .flip-card {
+        transform-style: preserve-3d;
+        transition: transform 0.8s ease; /* Slow flip transition */
+        position: relative; /* Allow absolute positioning of back */
+        width: 100%; /* Full width of the parent */
+        height: 100%; /* Full height of the parent */
+      }
+      .flip-card .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden; /* Hide back when facing front */
+        background-color: #38a169; /* Same as green-500 */
+        color: white; /* Text color */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotateX(180deg); /* Hide back side initially */
+      }
+      .parent-card {
+        perspective: 1000px; /* Add perspective for 3D effect */
+        width: 310px; /* Initial width of parent card initial value 410px*/
+        height: 400px; /* Fixed height of parent */
+        margin: 20px; /* Spacing around parent card */
+        background-color: #3b82f6; /* Tailwind blue-500 */
+        border-radius: 20px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for parent */
+        overflow: hidden; /* Hide overflow for smooth transition */
+        transition: width 0.8s ease, height 0.8s ease; /* Smooth transition */
+        position: relative; /* For absolute positioning of the child card and logo */
+        transform-origin: left; /* Fix the left side when expanding */
+      }
+      .parent-card:hover {
+        width: 100%; /* Expand only to the right on hover */
+        height: 400px; /* Keep height constant */
+      }
+      .parent-card img {
+        width: 100%; /* Full width image */
+        height: 100%; /* Full height image */
+        object-fit: cover; /* Maintain image aspect ratio */
+      }
+      .logo {
+        position: absolute;
+        top: 15px; /* Distance from the top */
+        right: 15px; /* Distance from the right */
+        width: 50px; /* Logo width */
+        height: 50px; /* Logo height */
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Semi-transparent background */
+        border-radius: 50%; /* Make the logo circular */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for logo */
+        transition: transform 0.8s ease; /* Transition for rotation */
+      }
+
+      /* modification for rotation logo */
+
+      .parent-card:hover .logo {
+        animation: rotateClockwise 0.8s forwards; /* Rotate clockwise on hover */
+      }
+
+      .parent-card:not(:hover) .logo {
+        animation: rotateAntiClockwise 0.8s forwards; /* Rotate counterclockwise when not hovered */
+      }
+
+      @keyframes rotateClockwise {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes rotateAntiClockwise {
+        from {
+          transform: rotate(360deg);
+        }
+        to {
+          transform: rotate(0deg);
+        }
+      }
+      /* ========================= Modification close */
+
+      .child-card {
+        position: absolute; /* Position child card absolutely */
+        top: 70%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%) rotateX(90deg); /* Start at 90 degrees */
+        width: 90%; /* 50% width of parent card */
+        height: 50%; /* 50% height of parent card */
+        transition: opacity 0.8s ease 0.2s, transform 0.8s ease; /* Smooth appearance and flip */
+        opacity: 0; /* Start invisible */
+      }
+      .parent-card:hover .child-card {
+        opacity: 1; /* Become visible on parent hover */
+        transform: translate(-50%, -50%) rotateX(0deg); /* Flip to front on parent hover */
+      }
+      .child-card:hover {
+        transform: translate(-50%, -50%) rotateX(90deg); /* Flip back on hover */
+      }
+
+      /* process overview */
+
+      .text-bborder {
+        -webkit-text-stroke: 1px #034833; /* Border width and color */
+      }
+
+      /* Footer input */
+      .glass-input {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 1.975rem;
+      }
+    
+  

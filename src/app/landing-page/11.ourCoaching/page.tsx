@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
+import Image from 'next/image';
 
 export default function OURCOACHING() {
   useEffect(() => {
@@ -22,14 +23,14 @@ export default function OURCOACHING() {
 
   return (
     // <!-- Our coaching -->
-    <section className="bg-white bg-[url('/coaching-bg-img.png')] bg-cover bg-center min-h-[850px] md:min-h-[760px] mx-auto backdrop-blur-3xl sm:mt-32 md:mt-6">
+    <section className="bg-white bg-[url('/landingPageAssets/coaching-bg-img.png')] bg-cover bg-center min-h-[850px] md:min-h-[760px] mx-auto backdrop-blur-3xl sm:mt-32 md:mt-6">
       <div className="bg-white/80 w-full min-h-[850px] md:min-h-[760px]">
         {/* <!-- Div 0 --> */}
         <div className="px-6 relative mx-auto">
           {/* <!-- Div 1 --> */}
           <div className="flex flex-row gap-2 pt-16">
-            <img
-              src=" card-2.3.svg"
+            <Image 
+              src="/landingPageAssets/card-2.3.svg"
               alt=""
               className="relative w-[25px] h-[25px]"
             />
@@ -113,8 +114,8 @@ export default function OURCOACHING() {
 
             {/* <!-- right image --> */}
             <div className="mt-6 mb-16 lg:mt-16">
-              <img
-                src=" coaching-right-img-1.png"
+              <Image 
+                src="/landingPageAssets/coaching-right-img-1.png"
                 alt=""
                 className="relative w-[601px] h-[440px] sm:w-[701px] sm:h-[650px] md:w-[361px] md:h-[290px] lg:w-[601px] lg:h-[440px] rounded-[30px]"
               />

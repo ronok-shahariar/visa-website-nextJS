@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 
 import { useEffect } from 'react';
 
@@ -73,7 +74,7 @@ export default function WHYCHOOSEUS() {
 
     <section className="lg:flex lg:mx-auto lg:px-8 lg:gap-x-10 w-full pt-16 overflow-hidden">
       {/* <!-- left section --> */}
-      <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start lg:items-start sm:items-center relative min-h-[500px] gap-10 lg:gap-x-7 lg:w-full">
+      <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start lg:items-start sm:items-center relative min-h-[500px] gap-10 lg:gap-x-7 lg:w-[50%]">
         {/* <!-- left side --> */}
         <div className="flex flex-col relative items-center justify-center">
           {/* <!-- left image --> */}
@@ -81,17 +82,21 @@ export default function WHYCHOOSEUS() {
             {/* <!-- Border Div --> */}
             <div className="absolute top-3 left-2 border-[1px] border-getAnAppointment rounded-[20px] pointer-events-none w-full h-full z-10"></div>
 
-            <img
-              src="choose-us-left-img.png"
+            <Image 
+              src="/landingPageAssets/choose-us-left-img.png"
               alt=""
-              className="relative z-0 rounded-[20px]"
+              width={310}
+              height={450}
+              className="relative  z-0 rounded-[20px]"
             />
           </div>
 
           <div className="flex justify-center items-center pt-10 mb-10">
-            <img
-              src="choose-us-circle-img.png"
+            <Image 
+              src="/landingPageAssets/choose-us-circle-img.png"
               alt=""
+              width={220}
+              height={220}
               className="rotate-animation"
             />
           </div>
@@ -102,82 +107,82 @@ export default function WHYCHOOSEUS() {
           {/* <!-- Left image right portion --> */}
           {/* <!-- Box --> */}
           <div className="flex flex-col items-center justify-center w-full overflow-hidden">
-            <div className="h-[20%] w-[70%] sm:w-full bg-button rounded-[20px] flex flex-row justify-center items-center">
+            <div className="h-[220] w-[150px] sm:w-full bg-button rounded-[20px] flex flex-row justify-center items-center">
               {/* <!-- Experience Counter --> */}
               <div className="flex flex-row justify-center items-center gap-2 overflow-hidden">
                 {/* Counter Value */}
                 <div className="number-container relative ">
                   <div id="tensContainer" className="digit-container ">
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       0
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       1
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       2
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       3
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       4
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       5
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       6
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       7
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       8
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       9
                     </span>
                   </div>
                   <div id="unitsContainer" className="digit-container">
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       0
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       1
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       2
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       3
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       4
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       5
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       6
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       7
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       8
                     </span>
-                    <span className="digit font-roboto text-[18px] font-bold text-white">
+                    <span className="digit font-roboto text-[16px] font-bold text-white">
                       9
                     </span>
                   </div>
                 </div>
                 {/* Text Year of experience */}
                 <div className="flex flex-col items-center justify-center relative">
-                  <p className="text-white font-roboto text-[18px] ">
+                  <p className="text-white font-roboto text-[16px] ">
                     Years Of
                   </p>
-                  <span className="text-white font-roboto text-[18px] ">
+                  <span className="text-white font-roboto text-[16px] ">
                     Experience
                   </span>
                 </div>
@@ -185,9 +190,11 @@ export default function WHYCHOOSEUS() {
             </div>
             {/* <!-- image below box --> */}
             <div className="flex items-center justify-center relative mt-8">
-              <img
-                src="choose-us-right-img.png"
+              <Image 
+                src="/landingPageAssets/choose-us-right-img.png"
                 alt="Experience Image"
+                width={350}
+                height={500}
                 className="relative rounded-[20px]"
               />
             </div>
@@ -196,10 +203,10 @@ export default function WHYCHOOSEUS() {
       </div>
 
       {/* <!-- Right section --> */}
-      <div className="relative min-h-[500px] mx-4 space-y-3 pt-10 lg:pt-0">
+      <div className="relative lg:w-[50%] min-h-[500px] mx-4 space-y-3 pt-10 lg:pt-0">
         <div className="flex flex-row gap-2">
-          <img
-            src="card-2.3.svg"
+          <Image 
+            src="/landingPageAssets/card-2.3.svg"
             alt=""
             className="relative w-[25px] h-[25px]"
           />
@@ -227,8 +234,8 @@ export default function WHYCHOOSEUS() {
           <div className="z-[100] border border-gray-300 relative pt-8 pl-8 py-6 pr-8 rounded-[20px] mt-7">
             <div className="flex flex-row gap-2">
               <div className="relative flex rounded-full bg-getAnAppointment w-[60px] h-[60px] items-center justify-center overflow-hidden">
-                <img
-                  src="image (5).svg"
+                <Image 
+                  src="/landingPageAssets/image (5).svg"
                   alt=""
                   className="w-[40px] h-[40px] shake-image transition-transform duration-500 ease-in-out"
                 />
@@ -240,8 +247,8 @@ export default function WHYCHOOSEUS() {
 
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-2 items-center">
-                <img
-                  src="image (6).svg"
+                <Image 
+                  src="/landingPageAssets/image (6).svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -250,8 +257,8 @@ export default function WHYCHOOSEUS() {
                 </p>
               </div>
               <div className="flex gap-2">
-                <img
-                  src="image (6).svg"
+                <Image 
+                  src="/landingPageAssets/image (6).svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -266,8 +273,8 @@ export default function WHYCHOOSEUS() {
           <div className="z-[100] border border-gray-300 relative pt-8 pl-8 py-6 pr-8 rounded-[20px] mt-7">
             <div className="flex flex-row gap-2">
               <div className="relative flex rounded-full bg-getAnAppointment w-[60px] h-[60px] items-center justify-center overflow-hidden">
-                <img
-                  src="image (7).svg"
+                <Image 
+                  src="/landingPageAssets/image (7).svg"
                   alt=""
                   className="w-[40px] h-[40px] shake-image transition-transform duration-500 ease-in-out"
                 />
@@ -279,8 +286,8 @@ export default function WHYCHOOSEUS() {
 
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-2 items-center">
-                <img
-                  src="image (6).svg"
+                <Image 
+                  src="/landingPageAssets/image (6).svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -289,8 +296,8 @@ export default function WHYCHOOSEUS() {
                 </p>
               </div>
               <div className="flex gap-2">
-                <img
-                  src="image (6).svg"
+                <Image 
+                  src="/landingPageAssets/image (6).svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -322,8 +329,8 @@ export default function WHYCHOOSEUS() {
           {/* <!-- Need Help --> */}
           <div className="flex flex-row gap-4 w-full h-full items-center mt-4">
             <div className="relative flex flex-col rounded-full bg-button w-[52px] h-[52px] items-center justify-center overflow-hidden">
-              <img
-                src="icons8-phone-30.png"
+              <Image 
+                src="/landingPageAssets/icons8-phone-30.png"
                 alt=""
                 className="w-[20px] h-[20px] shake-image transition-transform duration-500 ease-in-out"
               />

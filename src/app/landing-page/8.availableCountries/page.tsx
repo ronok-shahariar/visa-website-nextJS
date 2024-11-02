@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 
 export default function AVAILCOUNTR() {
   return (
@@ -13,7 +14,7 @@ export default function AVAILCOUNTR() {
             AVAILABLE COUNTRIES
           </h2>
 
-          <img src="available countries logo.svg" alt="" />
+          <Image  src="/landingPageAssets/available countries logo.svg" alt="" />
         </div>
 
         {/* <!-- Div 2 --> */}
@@ -48,8 +49,8 @@ export default function AVAILCOUNTR() {
           <div className="z-[100] border border-gray-300 relative pt-8 pl-8 py-6 pr-8 rounded-[20px] mt-7 group">
             <div className="flex flex-col gap-2">
               <div className="relative flex rounded-full w-[70px] h-[70px] items-center justify-center overflow-hidden">
-                <img
-                  src="adventure-img1.png"
+                <Image 
+                  src="/landingPageAssets/adventure-img1.png"
                   alt=""
                   className="w-full h-full sh transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]"
                 />
@@ -61,8 +62,8 @@ export default function AVAILCOUNTR() {
             {/* <!-- tick and header --> */}
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src=" /landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -72,8 +73,8 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src=" /landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -83,8 +84,8 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src=" /landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -100,8 +101,8 @@ export default function AVAILCOUNTR() {
             <div className="flex flex-col gap-2">
               <div className="relative flex rounded-full w-[70px] h-[70px] items-center justify-center overflow-hidden">
                 {/* <!-- logo --> */}
-                <img
-                  src=" adventure-img2.png"
+                <Image 
+                  src="/landingPageAssets/adventure-img2.png"
                   alt=""
                   className="w-full h-full sh transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]"
                 />
@@ -113,8 +114,8 @@ export default function AVAILCOUNTR() {
             {/* <!-- tick and header --> */}
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -124,8 +125,8 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -135,8 +136,8 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -151,8 +152,8 @@ export default function AVAILCOUNTR() {
           <div className="z-[100] border border-gray-300 relative pt-8 pl-8 py-6 pr-8 rounded-[20px] mt-7 group">
             <div className="flex flex-col gap-2">
               <div className="relative flex rounded-full w-[70px] h-[70px] items-center justify-center overflow-hidden">
-                <img
-                  src=" adventure-img3.png"
+                <Image 
+                  src="/landingPageAssets/adventure-img3.png"
                   alt=""
                   className="w-full h-full sh transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]"
                 />
@@ -164,8 +165,8 @@ export default function AVAILCOUNTR() {
             {/* <!-- tick and header --> */}
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -175,8 +176,8 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -186,8 +187,8 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -202,8 +203,8 @@ export default function AVAILCOUNTR() {
           <div className="z-[100] border border-gray-300 relative pt-8 pl-8 py-6 pr-8 rounded-[20px] mt-7 group">
             <div className="flex flex-col gap-2">
               <div className="relative flex rounded-full w-[70px] h-[70px] items-center justify-center overflow-hidden">
-                <img
-                  src=" adventure-img4.png"
+                <Image 
+                  src="/landingPageAssets/adventure-img4.png"
                   alt=""
                   className="w-full h-full sh transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]"
                 />
@@ -215,8 +216,8 @@ export default function AVAILCOUNTR() {
             {/* <!-- tick and header --> */}
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -226,8 +227,8 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />
@@ -237,8 +238,8 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <img
-                  src=" check-7079.svg"
+                <Image 
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
                   className="relative w-[15px] h-[15px]"
                 />

@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 
 export default function GETOURBEST() {
   return (
@@ -7,8 +8,8 @@ export default function GETOURBEST() {
       <div className="relative flex flex-col lg:flex-row md:flex-row items-center justify-center lg:items-start lg:justify-start pl-4 pr-4">
         {/* <!-- left side --> */}
         <div className="sm:flex sm:items-center sm:justify-center lg:w-[40%]">
-          <img
-            src="  faq-info-img.png"
+          <Image 
+            src="/landingPageAssets/faq-info-img.png"
             alt=""
             className="relative rounded-[20px] w-[450px] h-[650px]"
           />
@@ -23,8 +24,8 @@ export default function GETOURBEST() {
               <div className="flex flex-col space-y-3 lg:w-[60%] lg:p-10">
                 {/* <!-- logo Globe --> */}
                 <div className="relative flex flex-col rounded-full bg-getAnAppointment w-[80px] h-[80px] items-center justify-center">
-                  <img
-                    src="  Card-1.svg"
+                  <Image 
+                    src="/landingPageAssets/Card-1.svg"
                     alt=""
                     className="w-[50px] h-[50px] shake-image transition-transform duration-500 ease-in-out"
                   />
@@ -37,7 +38,7 @@ export default function GETOURBEST() {
 
                   <p className="font-roboto text-gray-500 leading-[1.7] text-justify pr-7">
                     Lorem Ipsum is simply dummy text the printing and typese
-                    Lorem Ipsum has been the industry's standard dummy
+                    Lorem Ipsum has been the industry standard dummy
                   </p>
 
                   {/* <!-- contact Us button --> */}
@@ -57,8 +58,8 @@ export default function GETOURBEST() {
 
               {/* <!-- right image --> */}
               <div className="hidden lg:flex justify-end place-items-end">
-                <img
-                  src="  faq-left-img.png"
+                <Image 
+                  src="/landingPageAssets/faq-left-img.png"
                   alt=""
                   className="relative w-[300px] h-[350px]"
                 />

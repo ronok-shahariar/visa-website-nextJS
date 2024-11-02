@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+
 import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
   FaPinterestP,
 } from "react-icons/fa";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const menuToggleRef = useRef<HTMLButtonElement>(null);
@@ -56,9 +59,12 @@ export default function Navbar() {
     <nav className="text-green_3 font-roboto w-full px-5 relative z-20">
       <div className="flex items-center justify-between w-full py-6">
         {/* Logo */}
-        <img
+       
+        <Image
           src="/images/onevisahub_main.png"
           alt="Logo"
+          width={170}
+          height={50}
           className="w-[150px] h-[45px] lg:w-[170px] lg:h-[50px] cursor-pointer"
         />
 
@@ -98,39 +104,39 @@ export default function Navbar() {
         {/* <!-- Options (hidden on small screens) --> */}
         <ul className="hidden lg:flex lg:space-x-5 lg:items-center lg:justify-center lg:-ml-48 font-roboto font-bold text-[15px] text-greenBody">
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link href="#" className="cursor-pointer">
               HOME
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link href="#" className="cursor-pointer">
               ABOUT US
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link href="#" className="cursor-pointer">
               STORY
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link href="#" className="cursor-pointer">
               VISA
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link href="#" className="cursor-pointer">
               BLOG
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link href="#" className="cursor-pointer">
               PAGE
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link href="#" className="cursor-pointer">
               CONTACT
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -157,7 +163,7 @@ export default function Navbar() {
             <div className="w-[85%] flex flex-row items-stretch justify-between">
               {/* <!-- logo --> */}
               <div>
-                <img
+                <Image
                   src="offcanvas-logo.png"
                   alt=""
                   className="w-28 h-8 md:w-32 md:h-10"
@@ -194,13 +200,13 @@ export default function Navbar() {
             {/* <!-- list --> */}
             {/* <!-- 1 --> */}
             <div className="w-[85%] flex flex-row items-stretch justify-between">
-              <a
+              <Link
                 href="#"
                 className="cursor-pointer font-roboto text-white text-[12px] md:text-[15px] hover:text-button"
               >
                 HOME
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="#">
                 <div className="flex items-center justify-center border border-[#374151] p-1 rounded hover:bg-button">
                   <svg
                     width="10"
@@ -218,28 +224,28 @@ export default function Navbar() {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="w-[85%] h-[0.6px] bg-gray-800 mt-36"></div>
             {/* <!-- 2 --> */}
             <div className="w-[85%] flex flex-row items-stretch justify-between">
-              <a
+              <Link
                 href="#"
                 className="cursor-pointer font-roboto text-white text-[12px] md:text-[15px] hover:text-button"
               >
                 About Us
-              </a>
+              </Link>
             </div>
             <div className="w-[85%] h-[0.6px] bg-gray-800 mt-36"></div>
             {/* <!-- 3 --> */}
             <div className="w-[85%] flex flex-row items-stretch justify-between">
-              <a
+              <Link
                 href="#"
                 className="cursor-pointer font-roboto text-white text-[12px] md:text-[15px] hover:text-button"
               >
                 Story
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="#">
                 <div className="flex items-center justify-center border border-[#374151] p-1 rounded hover:bg-button">
                   <svg
                     width="10"
@@ -257,18 +263,18 @@ export default function Navbar() {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="w-[85%] h-[0.6px] bg-gray-800 mt-36"></div>
             {/* <!-- 4 --> */}
             <div className="w-[85%] flex flex-row items-stretch justify-between">
-              <a
+              <Link
                 href="#"
                 className="cursor-pointer font-roboto text-white text-[12px] md:text-[15px] hover:text-button"
               >
                 Visa
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="#">
                 <div className="flex items-center justify-center border border-[#374151] p-1 rounded hover:bg-button">
                   <svg
                     width="10"
@@ -286,18 +292,18 @@ export default function Navbar() {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="w-[85%] h-[0.6px] bg-gray-800 mt-36"></div>
             {/* <!-- 5 --> */}
             <div className="w-[85%] flex flex-row items-stretch justify-between">
-              <a
+              <Link
                 href="#"
                 className="cursor-pointer font-roboto text-white text-[12px] md:text-[15px] hover:text-button"
               >
                 Blog
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="#">
                 <div className="flex items-center justify-center border border-[#374151] p-1 rounded hover:bg-button">
                   <svg
                     width="10"
@@ -315,18 +321,18 @@ export default function Navbar() {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="w-[85%] h-[0.6px] bg-gray-800 mt-36"></div>
             {/* <!-- 6 --> */}
             <div className="w-[85%] flex flex-row items-stretch justify-between">
-              <a
+              <Link
                 href="#"
                 className="cursor-pointer font-roboto text-white text-[12px] md:text-[15px] hover:text-button"
               >
                 Page
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="#">
                 <div className="flex items-center justify-center border border-[#374151] p-1 rounded hover:bg-button">
                   <svg
                     width="10"
@@ -344,17 +350,17 @@ export default function Navbar() {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="w-[85%] h-[0.6px] bg-gray-800 mt-36"></div>
             {/* <!-- 7 --> */}
             <div className="w-[85%] flex flex-row items-stretch justify-between">
-              <a
+              <Link
                 href="#"
                 className="cursor-pointer font-roboto text-white text-[14px] md:text-[16px] hover:text-button"
               >
                 Contact
-              </a>
+              </Link>
             </div>
 
             <h2 className="font-roboto text-white text-[20px] md:text-[24px] pt-3">
@@ -362,34 +368,34 @@ export default function Navbar() {
             </h2>
             {/* <!-- Social icons --> */}
             <div className="flex flex-row space-x-5">
-              <a
+              <Link
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaFacebookF className="text-green-500" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaInstagram className="text-green-500" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn className="text-green-500" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://pinterest.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaPinterestP className="text-green-500" />
-              </a>
+              </Link>
             </div>
           </ul>
         </div>

@@ -1,5 +1,8 @@
 "use client"
 
+import Image from 'next/image';
+import Link from 'next/link';
+
 export default function HERO() {
   return (
     // <!-- Hero Section /responsive  -->
@@ -31,28 +34,28 @@ export default function HERO() {
               <div className="sm:flex sm:flex-row sm:items-center sm:justify-center sm:space-x-4">
                 <div className="flex items-center justify-center play-button border border-gray-500 rounded-full w-[47px] h-[47px] bg-button">
                   <button className="flex items-center justify-center w-full h-full">
-                    <img
-                      src="PlayButonIcon.svg"
+                    <Image 
+                      src="/landingPageAssets/PlayButonIcon.svg"
                       alt="Play Button"
                       className="w-[35px] h-[35px] pt-1 pl-1"
                     />
                   </button>
                 </div>
                 {/* <!-- Watch Our videos visible at sm: --> */}
-                <a
+                <Link
                   href="/"
                   className="text-white hidden sm:flex text-[18px] font-bold font-roboto mt-6 sm:mt-0"
                 >
                   Watch Our Videos
-                </a>
+                </Link>
               </div>
             </div>
-            <a
+            <Link
               href="/"
               className="text-white sm:hidden text-[18px] font-bold font-roboto mt-6"
             >
               Watch Our Videos
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -61,22 +64,22 @@ export default function HERO() {
           {/* <!-- Image container with overlapping images --> */}
           <div className="relative w-full mx-auto overflow-hidden">
             {/* <!-- Front Image --> */}
-            <img
-              src="frontImage.png"
+            <Image 
+              src="/landingPageAssets/frontImage.png"
               alt="Image 1"
               className="relative -top-11 sm:-top-16 w-[300px] h-[550px] sm:w-[400px] sm:h-[550px] sm:left-16 md:left-28 lg:-top-11 lg:left-0 lg:w-[500px] lg:h-[684px] image-1 object-contain"
             />
 
             {/* <!-- Back Images --> */}
-            <img
-              src="backImage.png"
+            <Image 
+              src="/landingPageAssets/backImage.png"
               alt="Image 2"
               className="absolute top-52 left-6 w-[310px] h-[310px] sm:left-20 sm:top-28 sm:w-[410px] sm:h-[410px] md:left-32 lg:top-52 lg:left-0 lg:w-[600px] lg:h-[600px] image-2 object-cover filter saturate-100 brightness-90 contrast-70"
               style={{ clipPath: "inset(0 0 10% 0)" }}
             />
 
-            <img
-              src="backImage2.png"
+            <Image 
+              src="/landingPageAssets/backImage2.png"
               alt="Image 3"
               className="absolute top-2 w-[500px] h-[410px] -right-24 sm:-top-1 sm:-right-4 sm:w-[400px] sm:h-[410px] md:right-12 lg:top-20 lg:w-[300px] lg:h-[510px] image-3 object-cover filter saturate-150 brightness-110 contrast-120"
             />

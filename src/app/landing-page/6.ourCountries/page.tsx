@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 
 import { useEffect, useRef } from 'react';
 
@@ -67,7 +68,7 @@ export default function OURCOUNTRY() {
       <div className="relative mx-auto">
         {/* <!-- Div 1 --> */}
         <div className="flex flex-row gap-2 pt-[70px]">
-          <img src="card-2.svg" alt="" className="relative w-[25px] h-[25px]" />
+          <Image  src="/landingPageAssets/card-2.svg" alt="" className="relative w-[25px] h-[25px]" />
           <h2 className="font-roboto font-bold text-[15px] text-white items-center justify-center pt-1">
             OUR COUNTRIES
           </h2>
@@ -101,15 +102,15 @@ export default function OURCOUNTRY() {
           {/* <!-- Parent Card Content --> */}
           <div className="parent-card relative">
             {/* <!-- Image inside parent card --> */}
-            <img
-              src="projact-img1.png"
+            <Image 
+              src="/landingPageAssets/projact-img1.png"
               alt="Card Image"
               className="absolute inset-0 z-0"
             />
 
             {/* <!-- Logo in the top-right corner --> */}
             <div className="logo">
-              <img src="projact-small-img1.png" alt="Logo" />
+              <Image  src="/landingPageAssets/projact-small-img1.png" alt="Logo" />
             </div>
 
             {/* <!-- Child Card --> */}
@@ -141,15 +142,15 @@ export default function OURCOUNTRY() {
           {/* <!-- Parent Card Content --> */}
           <div className="parent-card relative hidden sm:flex">
             {/* <!-- Image inside parent card --> */}
-            <img
-              src="projact-img2.png"
+            <Image 
+              src="/landingPageAssets/projact-img2.png"
               alt="Card Image"
               className="absolute inset-0 z-0"
             />
 
             {/* <!-- Logo in the top-right corner --> */}
             <div className="logo">
-              <img src="projact-small-img2.png" alt="Logo" />
+              <Image  src="/landingPageAssets/projact-small-img2.png" alt="Logo" />
             </div>
 
             {/* <!-- Child Card --> */}
@@ -181,15 +182,15 @@ export default function OURCOUNTRY() {
           {/* <!-- Parent Card Content --> */}
           <div className="parent-card relative hidden md:flex lg:visible">
             {/* <!-- Image inside parent card --> */}
-            <img
-              src="projact-img3.png"
+            <Image 
+              src="/landingPageAssets/projact-img3.png"
               alt="Card Image"
               className="absolute inset-0 z-0"
             />
 
             {/* <!-- Logo in the top-right corner --> */}
             <div className="logo">
-              <img src="projact-small-img3.png" alt="Logo" />
+              <Image  src="/landingPageAssets/projact-small-img3.png" alt="Logo" />
             </div>
 
             {/* <!-- Child Card --> */}
@@ -221,15 +222,15 @@ export default function OURCOUNTRY() {
           {/* <!-- Parent Card Content --> */}
           <div className="parent-card relative hidden md:flex lg:visible">
             {/* <!-- Image inside parent card --> */}
-            <img
-              src="projact-img4.png"
+            <Image 
+              src="/landingPageAssets/projact-img4.png"
               alt="Card Image"
               className="absolute inset-0 z-0"
             />
 
             {/* <!-- Logo in the top-right corner --> */}
             <div className="logo">
-              <img src="projact-small-img4.png" alt="Logo" />
+              <Image  src="/landingPageAssets/projact-small-img4.png" alt="Logo" />
             </div>
 
             {/* <!-- Child Card --> */}
@@ -261,15 +262,15 @@ export default function OURCOUNTRY() {
           {/* <!-- Parent Card Content --> */}
           <div className="parent-card relative hidden md:flex lg:visible">
             {/* <!-- Image inside parent card --> */}
-            <img
-              src="projact-img5.png"
+            <Image 
+              src="/landingPageAssets/projact-img5.png"
               alt="Card Image"
               className="absolute inset-0 z-0"
             />
 
             {/* <!-- Logo in the top-right corner --> */}
             <div className="logo">
-              <img src="projact-small-img5.png" alt="Logo" />
+              <Image  src="/landingPageAssets/projact-small-img5.png" alt="Logo" />
             </div>
 
             {/* <!-- Child Card --> */}

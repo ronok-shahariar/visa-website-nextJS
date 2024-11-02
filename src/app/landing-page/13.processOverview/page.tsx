@@ -1,11 +1,12 @@
 "use client"
+import Image from 'next/image';
 
 export default function PROCESSOVER() {
   return (
 
     // <!-- Process Overview -->
       <section
-        className="bg-white bg-[url('/process-bg.png')] bg-cover bg-center min-h-[650px] lg:min-h-[690px] mx-auto backdrop-blur-3xl"
+        className="bg-white bg-[url('/landingPageAssets/process-bg.png')] bg-cover bg-center min-h-[650px] lg:min-h-[690px] mx-auto backdrop-blur-3xl"
       >
         <div className="bg-white/80 w-full min-h-[650px] lg:min-h-[690px]">
           {/* <!-- top header --> */}
@@ -13,7 +14,7 @@ export default function PROCESSOVER() {
             className="flex flex-col items-center justify-center pt-16 lg:pt-24 space-y-4"
           >
             <div className="flex flex-row items-center justify-center gap-1">
-              <img src=" card-2.3.svg" alt="" />
+              <Image  src=" /landingPageAssets/card-2.3.svg" alt="" />
               <h2 className="font-roboto font-bold text-greenBody text-[16px]">
                 PROCESS OVERVIEW
               </h2>

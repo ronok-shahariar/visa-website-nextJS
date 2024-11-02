@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
+import Image from 'next/image';
 
 export default function SUPPORT() {
   useEffect(() => {
@@ -28,8 +29,8 @@ export default function SUPPORT() {
       <div className="relative mx-auto">
         {/* <!-- Div 1 --> */}
         <div className="flex flex-row gap-2 pt-[60px]">
-          <img
-            src="   card-2.3.svg"
+          <Image 
+            src="/landingPageAssets/card-2.3.svg"
             alt=""
             className="relative w-[25px] h-[25px]"
           />
@@ -72,8 +73,8 @@ export default function SUPPORT() {
           <div className="relative">
             {/* <!-- Image container --> */}
             <div>
-              <img
-                src="   team-img1.png"
+              <Image 
+                src="/landingPageAssets/team-img1.png"
                 alt="Sample Image"
                 className="w-full h-auto rounded-lg"
               />
@@ -104,8 +105,8 @@ export default function SUPPORT() {
           <div className="relative hidden md:flex lg:visible">
             {/* <!-- Image container --> */}
             <div>
-              <img
-                src="   team-img2.png"
+              <Image 
+                src="/landingPageAssets/team-img2.png"
                 alt="Sample Image"
                 className="w-full h-auto rounded-lg"
               />
@@ -137,8 +138,8 @@ export default function SUPPORT() {
           <div className="relative hidden lg:flex">
             {/* <!-- Image container --> */}
             <div>
-              <img
-                src="   team-img3.png"
+              <Image 
+                src="/landingPageAssets/team-img3.png"
                 alt="Sample Image"
                 className="w-full h-auto rounded-lg"
               />

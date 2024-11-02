@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
+import Image from 'next/image';
 
 export default function TESTIMONIAL() {
   useEffect(() => {
@@ -26,8 +27,8 @@ export default function TESTIMONIAL() {
       <div className="flex flex-col lg:flex-row pt-16 px-4 lg:space-x-5 items-center justify-center">
         {/* <!-- left image --> */}
         <div className="w-[80%]">
-          <img
-            src=" testimonial-left-img.png"
+          <Image 
+            src="/landingPageAssets/testimonial-left-img.png"
             alt=""
             className="relative w-[700px] md:w-[800px] lg:w-[500px] h-full rounded-[20px]"
           />
@@ -35,7 +36,7 @@ export default function TESTIMONIAL() {
         {/* <!-- right content box --> */}
         <div className="bg-getAnAppointment flex flex-col items-start justify-between p-7 lg:p-16 w-full rounded-[20px] mt-12 mb-16">
           {/* <!-- top image ## lg: starts from here--> */}
-          <img src=" testimonial-quote.svg" alt="" />
+          <Image  src="/landingPageAssets/testimonial-quote.svg" alt="" />
           <p className="font-roboto text-white text-[22px] sm:text-[32px] lg:text-[30px] lg:leading-[44px]">
             We have been operating for over an providin top-notch services to
             our clients and build strong track record in the industry.We have
@@ -45,8 +46,8 @@ export default function TESTIMONIAL() {
           {/* <!-- title logo and header --> */}
           <div className="flex flex-row mt-14 gap-7 items-center justify-center">
             <div>
-              <img
-                src=" testimonial-title-img.png"
+              <Image 
+                src="/landingPageAssets/testimonial-title-img.png"
                 alt=""
                 className="relative rounded-full"
               />

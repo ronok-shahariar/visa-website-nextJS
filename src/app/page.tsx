@@ -11,7 +11,6 @@ import HERO from "./landing-page/2.heroSection/page";
 import CARDSHOW from "./landing-page/3.cardShow/page";
 import WHYCHOOSEUS from "./landing-page/4.whyChooseUs/page";
 import SCROLCONT from "./landing-page/5.scrollingContainer/page";
-import SCOLCONT from "./landing-page/5.scrollingContainer/page";
 import OURCOUNTRY from "./landing-page/6.ourCountries/page";
 import VISASEC from "./landing-page/7.visaSection/page";
 import AVAILCOUNTR from "./landing-page/8.availableCountries/page";

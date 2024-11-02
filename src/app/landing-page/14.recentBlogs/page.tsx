@@ -1,5 +1,6 @@
 "use client"
 import { FaCalendar, FaUser } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function RECENTBLOG() {
   return (
@@ -10,8 +11,8 @@ export default function RECENTBLOG() {
         <div className="relative mx-auto">
           {/* <!-- Div 1 --> */}
           <div className="flex flex-row gap-2 pt-[60px] lg:pt-[116px]">
-            <img
-              src=" card-2.3.svg"
+            <Image 
+              src="/landingPageAssets/card-2.3.svg"
               alt=""
               className="relative w-[25px] h-[25px]"
             />
@@ -68,8 +69,8 @@ export default function RECENTBLOG() {
               <div
                 className="overflow-hidden rounded-tl-[20px] rounded-tr-[20px] h-[300px]"
               >
-                <img
-                  src=" blog-3img-1.png"
+                <Image 
+                  src="/landingPageAssets/blog-3img-1.png"
                   alt="Sample Image"
                   className="w-full h-full object-cover object-center scale-105"
                 />
@@ -130,8 +131,8 @@ export default function RECENTBLOG() {
               <div
                 className="overflow-hidden rounded-tl-[20px] rounded-tr-[20px] h-[300px]"
               >
-                <img
-                  src=" blog-2img-1.png"
+                <Image 
+                  src="/landingPageAssets/blog-2img-1.png"
                   alt="Sample Image"
                   className="relative w-full h-full object-cover object-center scale-105"
                 />
@@ -192,8 +193,8 @@ export default function RECENTBLOG() {
               <div
                 className="overflow-hidden rounded-tl-[20px] rounded-tr-[20px] h-[300px]"
               >
-                <img
-                  src=" blog-1img.png"
+                <Image 
+                  src="/landingPageAssets/blog-1img.png"
                   alt="Sample Image"
                   className="w-full h-full object-cover object-center scale-105"
                 />

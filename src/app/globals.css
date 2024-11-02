@@ -224,7 +224,7 @@
         perspective: 1000px; /* Add perspective for 3D effect */
         width: 310px; /* Initial width of parent card initial value 410px*/
         height: 400px; /* Fixed height of parent */
-        margin: 20px; /* Spacing around parent card */
+        margin-right: 20px; /* Spacing only on the right side */
         background-color: #3b82f6; /* Tailwind blue-500 */
         border-radius: 20px; /* Rounded corners */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for parent */

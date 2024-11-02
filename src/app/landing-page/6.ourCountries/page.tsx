@@ -106,7 +106,7 @@ export default function OURCOUNTRY() {
         {/* <!-- Div 3 --> */}
         {/* <!-- 5 Cards --> */}
 
-        <div className="sm:flex md:grid md:grid-cols-2 lg:flex items-center justify-center lg:pt-6">
+        <div className="flex  md:grid md:grid-cols-2 lg:flex lg:items-center lg:justify-center lg:pt-6">
           {/* <!-- Card 1 --> */}
           {/* <!-- Parent Card Content --> */}
           <div className="parent-card relative">

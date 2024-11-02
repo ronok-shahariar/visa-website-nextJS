@@ -51,7 +51,7 @@ export default function RECENTBLOG() {
         {/* <!-- Div 3 --> */}
         {/* <!-- 3 Cards --> */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 lg:pt-6">
+        <div className="grid grid-cols-1 pt-8 md:grid-cols-2 lg:grid-cols-3 gap-x-8 lg:pt-6">
           {/* <!-- card 1 --> */}
           <div className="relative w-full">
             {/* <!-- Image container --> */}

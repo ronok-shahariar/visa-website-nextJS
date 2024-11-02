@@ -70,7 +70,7 @@ export default function SUPPORT() {
         {/* <!-- Div 3 --> */}
         {/* <!-- 3 Cards --> */}
 
-        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-y-24 md:gap-x-5 lg:pt-12">
+        <div className="flex flex-col pt-8 md:grid md:grid-cols-2 lg:grid-cols-3 gap-y-24 md:gap-x-5 lg:pt-12">
           {/* <!-- card 1 --> */}
           <div className="relative">
             {/* <!-- Image container --> */}

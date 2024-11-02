@@ -115,7 +115,7 @@ export default function WHYCHOOSEUS() {
           {/* <!-- Left image right portion --> */}
           {/* <!-- Box --> */}
           <div className="flex flex-col items-center justify-center w-full overflow-hidden">
-            <div className="h-[220] w-[150px] sm:w-full bg-button rounded-[20px] flex flex-row justify-center items-center">
+            <div className="h-[150px] w-[290px] sm:w-[150px] md:h-[120px] md:w-[250px] lg:h-[120px] lg:w-[250px] bg-button rounded-[20px] flex flex-row justify-center items-center">
               {/* <!-- Experience Counter --> */}
               <div className="flex flex-row justify-center items-center gap-2 overflow-hidden">
                 {/* Counter Value */}

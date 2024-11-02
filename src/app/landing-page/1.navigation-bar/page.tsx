@@ -164,7 +164,7 @@ export default function Navbar() {
               {/* <!-- logo --> */}
               <div>
                 <Image
-                  src="/images/offcanvas-logo.png"
+                  src="/images/onevisahub_gr.png"
                   alt=""
                   width={170}
                   height={50}
@@ -206,7 +206,7 @@ export default function Navbar() {
                 href="#"
                 className="cursor-pointer font-roboto text-white text-[12px] md:text-[15px] hover:text-button"
               >
-                HOME
+                Home
               </Link>
               <Link href="#">
                 <div className="flex items-center justify-center border border-[#374151] p-1 rounded hover:bg-button">
@@ -359,7 +359,7 @@ export default function Navbar() {
             <div className="w-[85%] flex flex-row items-stretch justify-between">
               <Link
                 href="#"
-                className="cursor-pointer font-roboto text-white text-[14px] md:text-[16px] hover:text-button"
+                className="cursor-pointer font-roboto text-white text-[12px] md:text-[15px] hover:text-button"
               >
                 Contact
               </Link>

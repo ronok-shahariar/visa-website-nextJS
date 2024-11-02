@@ -1,5 +1,5 @@
 "use client";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function GETOURBEST() {
   return (
@@ -8,9 +8,11 @@ export default function GETOURBEST() {
       <div className="relative flex flex-col lg:flex-row md:flex-row items-center justify-center lg:items-start lg:justify-start pl-4 pr-4">
         {/* <!-- left side --> */}
         <div className="sm:flex sm:items-center sm:justify-center lg:w-[40%]">
-          <Image 
+          <Image
             src="/landingPageAssets/faq-info-img.png"
             alt=""
+            width={450}
+            height={650}
             className="relative rounded-[20px] w-[450px] h-[650px]"
           />
         </div>
@@ -24,9 +26,11 @@ export default function GETOURBEST() {
               <div className="flex flex-col space-y-3 lg:w-[60%] lg:p-10">
                 {/* <!-- logo Globe --> */}
                 <div className="relative flex flex-col rounded-full bg-getAnAppointment w-[80px] h-[80px] items-center justify-center">
-                  <Image 
+                  <Image
                     src="/landingPageAssets/Card-1.svg"
                     alt=""
+                    width={50}
+                    height={50}
                     className="w-[50px] h-[50px] shake-image transition-transform duration-500 ease-in-out"
                   />
                 </div>
@@ -43,24 +47,24 @@ export default function GETOURBEST() {
 
                   {/* <!-- contact Us button --> */}
                   <div className="pb-6">
-                      <button
-                        className="bg-white gap-x-1 flex items-center justify-center border border-gray-300 w-fit text-greenBody py-[16px] px-[27px] rounded-full font-roboto hover:bg-getAnAppointment hover:text-white transition-all duration-200 group"
-                      >
-                        <span>Contact us</span>
-                        <i
-                          data-feather="arrow-right"
-                          className="text-greenBody w-5 h-5 group-hover:text-white"
-                        ></i>
-                      </button>
-                    </div>
+                    <button className="bg-white gap-x-1 flex items-center justify-center border border-gray-300 w-fit text-greenBody py-[16px] px-[27px] rounded-full font-roboto hover:bg-getAnAppointment hover:text-white transition-all duration-200 group">
+                      <span>Contact us</span>
+                      <i
+                        data-feather="arrow-right"
+                        className="text-greenBody w-5 h-5 group-hover:text-white"
+                      ></i>
+                    </button>
+                  </div>
                 </div>
               </div>
 
               {/* <!-- right image --> */}
               <div className="hidden lg:flex justify-end place-items-end">
-                <Image 
+                <Image
                   src="/landingPageAssets/faq-left-img.png"
                   alt=""
+                  width={300}
+                  height={350}
                   className="relative w-[300px] h-[350px]"
                 />
               </div>

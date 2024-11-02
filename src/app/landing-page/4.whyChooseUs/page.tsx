@@ -1,12 +1,11 @@
 "use client";
-import Image from 'next/image';
+import Image from "next/image";
 
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export default function WHYCHOOSEUS() {
-
   // <!-- Experience Counter (00-25) Script -->
-  
+
   useEffect(() => {
     function animateSlidingCounter() {
       const tensContainer = document.getElementById("tensContainer");
@@ -20,11 +19,19 @@ export default function WHYCHOOSEUS() {
         const tens = Math.floor(count / 10);
         const units = count % 10;
 
-        if (tensContainer && tensContainer.firstElementChild && tensContainer.firstElementChild.textContent !== `${tens}`) {
+        if (
+          tensContainer &&
+          tensContainer.firstElementChild &&
+          tensContainer.firstElementChild.textContent !== `${tens}`
+        ) {
           animateDigit(tensContainer, tens);
         }
-        
-        if (unitsContainer && unitsContainer.firstElementChild && unitsContainer.firstElementChild.textContent !== `${units}`) {
+
+        if (
+          unitsContainer &&
+          unitsContainer.firstElementChild &&
+          unitsContainer.firstElementChild.textContent !== `${units}`
+        ) {
           animateDigit(unitsContainer, units);
         }
 
@@ -37,7 +44,8 @@ export default function WHYCHOOSEUS() {
     function animateDigit(container: HTMLElement, newDigit: number) {
       const currentDigit = container.firstElementChild;
       const newDigitElement = document.createElement("span");
-      newDigitElement.className = "digit font-roboto text-[70px] font-bold text-white";
+      newDigitElement.className =
+        "digit font-roboto text-[70px] font-bold text-white";
       newDigitElement.textContent = `${newDigit}`;
 
       container.appendChild(newDigitElement);
@@ -82,7 +90,7 @@ export default function WHYCHOOSEUS() {
             {/* <!-- Border Div --> */}
             <div className="absolute top-3 left-2 border-[1px] border-getAnAppointment rounded-[20px] pointer-events-none w-full h-full z-10"></div>
 
-            <Image 
+            <Image
               src="/landingPageAssets/choose-us-left-img.png"
               alt=""
               width={310}
@@ -92,7 +100,7 @@ export default function WHYCHOOSEUS() {
           </div>
 
           <div className="flex justify-center items-center pt-10 mb-10">
-            <Image 
+            <Image
               src="/landingPageAssets/choose-us-circle-img.png"
               alt=""
               width={220}
@@ -190,7 +198,7 @@ export default function WHYCHOOSEUS() {
             </div>
             {/* <!-- image below box --> */}
             <div className="flex items-center justify-center relative mt-8">
-              <Image 
+              <Image
                 src="/landingPageAssets/choose-us-right-img.png"
                 alt="Experience Image"
                 width={350}
@@ -205,9 +213,11 @@ export default function WHYCHOOSEUS() {
       {/* <!-- Right section --> */}
       <div className="relative lg:w-[50%] min-h-[500px] mx-4 space-y-3 pt-10 lg:pt-0">
         <div className="flex flex-row gap-2">
-          <Image 
+          <Image
             src="/landingPageAssets/card-2.3.svg"
             alt=""
+            width={25}
+            height={25}
             className="relative w-[25px] h-[25px]"
           />
           <h2 className="font-roboto font-bold text-[15px] sm:text-[16px] text-greenBody items-center justify-center">
@@ -229,14 +239,16 @@ export default function WHYCHOOSEUS() {
 
         {/* <!-- 2 cards --> */}
 
-        <div className="sm:flex flex-row gap-4 mr-14">
+        <div className="sm:flex flex-row  gap-4 ">
           {/* <!-- Box-1 --> */}
           <div className="z-[100] border border-gray-300 relative pt-8 pl-8 py-6 pr-8 rounded-[20px] mt-7">
             <div className="flex flex-row gap-2">
               <div className="relative flex rounded-full bg-getAnAppointment w-[60px] h-[60px] items-center justify-center overflow-hidden">
-                <Image 
+                <Image
                   src="/landingPageAssets/image (5).svg"
                   alt=""
+                  width={40}
+                  height={40}
                   className="w-[40px] h-[40px] shake-image transition-transform duration-500 ease-in-out"
                 />
               </div>
@@ -247,9 +259,11 @@ export default function WHYCHOOSEUS() {
 
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-2 items-center">
-                <Image 
+                <Image
                   src="/landingPageAssets/image (6).svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-600 text-[15px]">
@@ -257,9 +271,11 @@ export default function WHYCHOOSEUS() {
                 </p>
               </div>
               <div className="flex gap-2">
-                <Image 
+                <Image
                   src="/landingPageAssets/image (6).svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-600 text-[15px]">
@@ -273,9 +289,11 @@ export default function WHYCHOOSEUS() {
           <div className="z-[100] border border-gray-300 relative pt-8 pl-8 py-6 pr-8 rounded-[20px] mt-7">
             <div className="flex flex-row gap-2">
               <div className="relative flex rounded-full bg-getAnAppointment w-[60px] h-[60px] items-center justify-center overflow-hidden">
-                <Image 
+                <Image
                   src="/landingPageAssets/image (7).svg"
                   alt=""
+                  width={40}
+                  height={40}
                   className="w-[40px] h-[40px] shake-image transition-transform duration-500 ease-in-out"
                 />
               </div>
@@ -286,9 +304,11 @@ export default function WHYCHOOSEUS() {
 
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-2 items-center">
-                <Image 
+                <Image
                   src="/landingPageAssets/image (6).svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-600 text-[15px]">
@@ -296,9 +316,11 @@ export default function WHYCHOOSEUS() {
                 </p>
               </div>
               <div className="flex gap-2">
-                <Image 
+                <Image
                   src="/landingPageAssets/image (6).svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-600 text-[15px]">
@@ -311,7 +333,7 @@ export default function WHYCHOOSEUS() {
 
         {/* <!--  button & contact --> */}
 
-        <div className="flex flex-col sm:flex-row gap-5 mt-7 ml-3">
+        <div className="flex flex-col lg:items-center lg:justify-between sm:flex-row gap-5 mt-7 ml-3">
           {/* <!-- button Read More --> */}
 
           <div className="w-[70%] lg:w-[50%] h-full mt-5">
@@ -329,9 +351,11 @@ export default function WHYCHOOSEUS() {
           {/* <!-- Need Help --> */}
           <div className="flex flex-row gap-4 w-full h-full items-center mt-4">
             <div className="relative flex flex-col rounded-full bg-button w-[52px] h-[52px] items-center justify-center overflow-hidden">
-              <Image 
+              <Image
                 src="/landingPageAssets/icons8-phone-30.png"
                 alt=""
+                width={20}
+                height={20}
                 className="w-[20px] h-[20px] shake-image transition-transform duration-500 ease-in-out"
               />
             </div>

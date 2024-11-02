@@ -59,7 +59,7 @@ export default function Navbar() {
     <nav className="text-green_3 font-roboto w-full px-5 relative z-20">
       <div className="flex items-center justify-between w-full py-6">
         {/* Logo */}
-       
+
         <Image
           src="/images/onevisahub_main.png"
           alt="Logo"
@@ -164,8 +164,10 @@ export default function Navbar() {
               {/* <!-- logo --> */}
               <div>
                 <Image
-                  src="offcanvas-logo.png"
+                  src="/images/offcanvas-logo.png"
                   alt=""
+                  width={170}
+                  height={50}
                   className="w-28 h-8 md:w-32 md:h-10"
                 />
               </div>

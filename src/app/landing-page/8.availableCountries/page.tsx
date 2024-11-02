@@ -1,5 +1,5 @@
 "use client";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function AVAILCOUNTR() {
   return (
@@ -10,11 +10,16 @@ export default function AVAILCOUNTR() {
       <div className="relative p-6">
         {/* <!-- Div 1 --> */}
         <div className="flex flex-row gap-2 pt-[30px]">
-          <h2 className="font-roboto font-bold text-[14px] text-greenBody items-center justify-center pt-1">
+          <h2 className="font-roboto font-bold text-[18px] text-greenBody items-center justify-center pt-1">
             AVAILABLE COUNTRIES
           </h2>
 
-          <Image  src="/landingPageAssets/available countries logo.svg" alt="" />
+          <Image
+            src="/landingPageAssets/available countries logo.svg"
+            alt=""
+            width={85}
+            height={8}
+          />
         </div>
 
         {/* <!-- Div 2 --> */}
@@ -49,9 +54,12 @@ export default function AVAILCOUNTR() {
           <div className="z-[100] border border-gray-300 relative pt-8 pl-8 py-6 pr-8 rounded-[20px] mt-7 group">
             <div className="flex flex-col gap-2">
               <div className="relative flex rounded-full w-[70px] h-[70px] items-center justify-center overflow-hidden">
-                <Image 
+                <Image
                   src="/landingPageAssets/adventure-img1.png"
                   alt=""
+                  layout="fill"
+                  objectFit="contain" // Maintains image resolution without cropping
+                  quality={100} // Ensures full quality (0–100)
                   className="w-full h-full sh transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]"
                 />
               </div>
@@ -62,9 +70,11 @@ export default function AVAILCOUNTR() {
             {/* <!-- tick and header --> */}
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-4 items-center">
-                <Image 
-                  src=" /landingPageAssets/check-7079.svg"
+                <Image
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">
@@ -73,9 +83,11 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <Image 
-                  src=" /landingPageAssets/check-7079.svg"
+                <Image
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">
@@ -84,9 +96,11 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <Image 
-                  src=" /landingPageAssets/check-7079.svg"
+                <Image
+                  src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">
@@ -101,9 +115,12 @@ export default function AVAILCOUNTR() {
             <div className="flex flex-col gap-2">
               <div className="relative flex rounded-full w-[70px] h-[70px] items-center justify-center overflow-hidden">
                 {/* <!-- logo --> */}
-                <Image 
+                <Image
                   src="/landingPageAssets/adventure-img2.png"
                   alt=""
+                  layout="fill"
+                  objectFit="contain" // Maintains image resolution without cropping
+                  quality={100} // Ensures full quality (0–100)
                   className="w-full h-full sh transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]"
                 />
               </div>
@@ -114,9 +131,11 @@ export default function AVAILCOUNTR() {
             {/* <!-- tick and header --> */}
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-4 items-center">
-                <Image 
+                <Image
                   src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">
@@ -125,9 +144,11 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <Image 
+                <Image
                   src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">
@@ -136,9 +157,11 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <Image 
+                <Image
                   src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">
@@ -152,9 +175,12 @@ export default function AVAILCOUNTR() {
           <div className="z-[100] border border-gray-300 relative pt-8 pl-8 py-6 pr-8 rounded-[20px] mt-7 group">
             <div className="flex flex-col gap-2">
               <div className="relative flex rounded-full w-[70px] h-[70px] items-center justify-center overflow-hidden">
-                <Image 
+                <Image
                   src="/landingPageAssets/adventure-img3.png"
                   alt=""
+                  layout="fill"
+                  objectFit="contain" // Maintains image resolution without cropping
+                  quality={100} // Ensures full quality (0–100)
                   className="w-full h-full sh transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]"
                 />
               </div>
@@ -165,9 +191,11 @@ export default function AVAILCOUNTR() {
             {/* <!-- tick and header --> */}
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-4 items-center">
-                <Image 
+                <Image
                   src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">
@@ -176,9 +204,11 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <Image 
+                <Image
                   src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">
@@ -187,9 +217,11 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <Image 
+                <Image
                   src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">
@@ -203,9 +235,12 @@ export default function AVAILCOUNTR() {
           <div className="z-[100] border border-gray-300 relative pt-8 pl-8 py-6 pr-8 rounded-[20px] mt-7 group">
             <div className="flex flex-col gap-2">
               <div className="relative flex rounded-full w-[70px] h-[70px] items-center justify-center overflow-hidden">
-                <Image 
+                <Image
                   src="/landingPageAssets/adventure-img4.png"
                   alt=""
+                  layout="fill"
+                  objectFit="contain" // Maintains image resolution without cropping
+                  quality={100} // Ensures full quality (0–100)
                   className="w-full h-full sh transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]"
                 />
               </div>
@@ -216,9 +251,11 @@ export default function AVAILCOUNTR() {
             {/* <!-- tick and header --> */}
             <div className="flex flex-col mt-5 justify-between gap-4">
               <div className="flex gap-4 items-center">
-                <Image 
+                <Image
                   src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">
@@ -227,9 +264,11 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <Image 
+                <Image
                   src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">
@@ -238,9 +277,11 @@ export default function AVAILCOUNTR() {
               </div>
 
               <div className="flex gap-4 items-center">
-                <Image 
+                <Image
                   src="/landingPageAssets/check-7079.svg"
                   alt=""
+                  width={15}
+                  height={15}
                   className="relative w-[15px] h-[15px]"
                 />
                 <p className="font-roboto text-gray-500 text-[17px]">

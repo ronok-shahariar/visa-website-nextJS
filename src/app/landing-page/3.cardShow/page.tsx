@@ -1,5 +1,5 @@
-"use client"
-import Image from 'next/image';
+"use client";
+import Image from "next/image";
 
 export default function CARDSHOW() {
   return (
@@ -9,9 +9,11 @@ export default function CARDSHOW() {
 
       <div className="z-[100] border border-gray-300 relative w-full h-full flex flex-col pt-12 pl-8 py-6 pr-8 rounded-[20px]">
         <div className="relative flex flex-col rounded-full bg-getAnAppointment w-[100px] h-[100px] items-center justify-center overflow-hidden">
-          <Image 
+          <Image
             src="/landingPageAssets/Card-1.svg"
             alt=""
+            width={50}
+            height={50}
             className="w-[50px] h-[50px] shake-image transition-transform duration-500 ease-in-out"
           />
         </div>
@@ -31,9 +33,11 @@ export default function CARDSHOW() {
       {/* <!-- Box 2 --> */}
       <div className="z-[100] border border-gray-300 relative w-full h-full flex flex-col pt-12 pl-8 py-6 pr-8 rounded-[20px]">
         <div className="relative flex flex-col rounded-full bg-getAnAppointment w-[100px] h-[100px] items-center justify-center overflow-hidden">
-          <Image 
+          <Image
             src="/landingPageAssets/card-2.svg"
             alt=""
+            width={50}
+            height={50}
             className="w-[50px] h-[50px] shake-image transition-transform duration-500 ease-in-out"
           />
         </div>
@@ -53,9 +57,11 @@ export default function CARDSHOW() {
       {/* <!-- Box 3 --> */}
       <div className="z-[100] border border-gray-300 relative w-full h-full flex flex-col pt-12 pl-8 py-6 pr-8 rounded-[20px]">
         <div className="relative flex flex-col rounded-full bg-getAnAppointment w-[100px] h-[100px] items-center justify-center overflow-hidden">
-          <Image 
+          <Image
             src="/landingPageAssets/Card-3.svg"
             alt=""
+            width={50}
+            height={50}
             className="w-[50px] h-[50px] shake-image transition-transform duration-500 ease-in-out"
           />
         </div>

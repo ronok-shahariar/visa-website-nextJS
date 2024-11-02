@@ -1,18 +1,17 @@
-"use client"
-import Image from 'next/image';
+"use client";
+import Image from "next/image";
 
-import { useEffect, useRef } from 'react';
-
+import { useEffect, useRef } from "react";
 
 export default function OURCOUNTRY() {
-
   const cardContainerRef = useRef<HTMLDivElement | null>(null); // Specify the type for useRef
   const scrollAmount = 300; // Adjust based on the card width
 
   useEffect(() => {
     // Load the Feather Icons script
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js';
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js";
     script.onload = () => {
       if (window.feather) {
         window.feather.replace(); // Replace <i> tags with SVGs
@@ -28,37 +27,35 @@ export default function OURCOUNTRY() {
 
   useEffect(() => {
     const cardContainer = cardContainerRef.current;
-    const prevButton = document.getElementById('prevButton');
-    const nextButton = document.getElementById('nextButton');
+    const prevButton = document.getElementById("prevButton");
+    const nextButton = document.getElementById("nextButton");
 
     const handleNext = () => {
       if (cardContainer) {
-        cardContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        cardContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
       }
     };
 
     const handlePrev = () => {
       if (cardContainer) {
-        cardContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        cardContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
       }
     };
 
     // Add event listeners
     if (nextButton && prevButton) {
-      nextButton.addEventListener('click', handleNext);
-      prevButton.addEventListener('click', handlePrev);
+      nextButton.addEventListener("click", handleNext);
+      prevButton.addEventListener("click", handlePrev);
     }
 
     // Cleanup event listeners on component unmount
     return () => {
       if (nextButton && prevButton) {
-        nextButton.removeEventListener('click', handleNext);
-        prevButton.removeEventListener('click', handlePrev);
+        nextButton.removeEventListener("click", handleNext);
+        prevButton.removeEventListener("click", handlePrev);
       }
     };
   }, []); // Only run once on mount
-       
-
 
   return (
     // <!-- Our Countries -->
@@ -68,7 +65,13 @@ export default function OURCOUNTRY() {
       <div className="relative mx-auto">
         {/* <!-- Div 1 --> */}
         <div className="flex flex-row gap-2 pt-[70px]">
-          <Image  src="/landingPageAssets/card-2.svg" alt="" className="relative w-[25px] h-[25px]" />
+          <Image
+            src="/landingPageAssets/card-2.svg"
+            alt=""
+            width={25}
+            height={25}
+            className="relative w-[25px] h-[25px]"
+          />
           <h2 className="font-roboto font-bold text-[15px] text-white items-center justify-center pt-1">
             OUR COUNTRIES
           </h2>
@@ -84,14 +87,20 @@ export default function OURCOUNTRY() {
           {/* <!-- Next previous button --> */}
 
           <div className="flex w-[80%] h-[20%] lg:justify-end pt-5 sm:pt-10 lg:pt-24 gap-4">
-        <button id="prevButton" className="flex items-center justify-center w-16 h-16 rounded-full border border-white hover:bg-button transition-all duration-200">
-          <i data-feather="arrow-left" className="text-white w-6 h-6"></i>
-        </button>
+            <button
+              id="prevButton"
+              className="flex items-center justify-center w-16 h-16 rounded-full border border-white hover:bg-button transition-all duration-200"
+            >
+              <i data-feather="arrow-left" className="text-white w-6 h-6"></i>
+            </button>
 
-        <button id="nextButton" className="flex items-center justify-center w-16 h-16 rounded-full border border-white hover:bg-button transition-all duration-200">
-          <i data-feather="arrow-right" className="text-white w-6 h-6"></i>
-        </button>
-      </div>
+            <button
+              id="nextButton"
+              className="flex items-center justify-center w-16 h-16 rounded-full border border-white hover:bg-button transition-all duration-200"
+            >
+              <i data-feather="arrow-right" className="text-white w-6 h-6"></i>
+            </button>
+          </div>
         </div>
 
         {/* <!-- Div 3 --> */}
@@ -102,15 +111,22 @@ export default function OURCOUNTRY() {
           {/* <!-- Parent Card Content --> */}
           <div className="parent-card relative">
             {/* <!-- Image inside parent card --> */}
-            <Image 
+            <Image
               src="/landingPageAssets/projact-img1.png"
               alt="Card Image"
+              width={410}
+              height={422}
               className="absolute inset-0 z-0"
             />
 
             {/* <!-- Logo in the top-right corner --> */}
             <div className="logo">
-              <Image  src="/landingPageAssets/projact-small-img1.png" alt="Logo" />
+              <Image
+                src="/landingPageAssets/projact-small-img1.png"
+                alt="Logo"
+                width={60}
+                height={60}
+              />
             </div>
 
             {/* <!-- Child Card --> */}
@@ -142,15 +158,22 @@ export default function OURCOUNTRY() {
           {/* <!-- Parent Card Content --> */}
           <div className="parent-card relative hidden sm:flex">
             {/* <!-- Image inside parent card --> */}
-            <Image 
+            <Image
               src="/landingPageAssets/projact-img2.png"
               alt="Card Image"
+              width={410}
+              height={422}
               className="absolute inset-0 z-0"
             />
 
             {/* <!-- Logo in the top-right corner --> */}
             <div className="logo">
-              <Image  src="/landingPageAssets/projact-small-img2.png" alt="Logo" />
+              <Image
+                src="/landingPageAssets/projact-small-img2.png"
+                alt="Logo"
+                width={60}
+                height={60}
+              />
             </div>
 
             {/* <!-- Child Card --> */}
@@ -182,15 +205,22 @@ export default function OURCOUNTRY() {
           {/* <!-- Parent Card Content --> */}
           <div className="parent-card relative hidden md:flex lg:visible">
             {/* <!-- Image inside parent card --> */}
-            <Image 
+            <Image
               src="/landingPageAssets/projact-img3.png"
               alt="Card Image"
+              width={410}
+              height={422}
               className="absolute inset-0 z-0"
             />
 
             {/* <!-- Logo in the top-right corner --> */}
             <div className="logo">
-              <Image  src="/landingPageAssets/projact-small-img3.png" alt="Logo" />
+              <Image
+                src="/landingPageAssets/projact-small-img3.png"
+                alt="Logo"
+                width={60}
+                height={60}
+              />
             </div>
 
             {/* <!-- Child Card --> */}
@@ -222,15 +252,22 @@ export default function OURCOUNTRY() {
           {/* <!-- Parent Card Content --> */}
           <div className="parent-card relative hidden md:flex lg:visible">
             {/* <!-- Image inside parent card --> */}
-            <Image 
+            <Image
               src="/landingPageAssets/projact-img4.png"
               alt="Card Image"
+              width={410}
+              height={422}
               className="absolute inset-0 z-0"
             />
 
             {/* <!-- Logo in the top-right corner --> */}
             <div className="logo">
-              <Image  src="/landingPageAssets/projact-small-img4.png" alt="Logo" />
+              <Image
+                src="/landingPageAssets/projact-small-img4.png"
+                alt="Logo"
+                width={60}
+                height={60}
+              />
             </div>
 
             {/* <!-- Child Card --> */}
@@ -262,15 +299,22 @@ export default function OURCOUNTRY() {
           {/* <!-- Parent Card Content --> */}
           <div className="parent-card relative hidden md:flex lg:visible">
             {/* <!-- Image inside parent card --> */}
-            <Image 
+            <Image
               src="/landingPageAssets/projact-img5.png"
               alt="Card Image"
+              width={410}
+              height={422}
               className="absolute inset-0 z-0"
             />
 
             {/* <!-- Logo in the top-right corner --> */}
             <div className="logo">
-              <Image  src="/landingPageAssets/projact-small-img5.png" alt="Logo" />
+              <Image
+                src="/landingPageAssets/projact-small-img5.png"
+                alt="Logo"
+                width={60}
+                height={60}
+              />
             </div>
 
             {/* <!-- Child Card --> */}

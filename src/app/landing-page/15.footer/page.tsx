@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import Image from 'next/image';
+import Image from "next/image";
 
 import {
   FaFacebookF,
@@ -35,7 +35,9 @@ export default function FOOTER() {
       {/* <!-- Background Image --> */}
       <div
         className="absolute bottom-0 left-0 w-full h-1/2 bg-bottom bg-contain bg-no-repeat"
-        style={{ backgroundImage: "url('/landingPageAssets/footer1-bg-img.png')" }}
+        style={{
+          backgroundImage: "url('/landingPageAssets/footer1-bg-img.png')",
+        }}
       ></div>
 
       {/* <!-- support & get ready --> */}
@@ -45,7 +47,12 @@ export default function FOOTER() {
           <div className="flex flex-row items-center justify-center sm:justify-start gap-6">
             {/* <!-- Left side money logo --> */}
             <div className="bg-button flex items-center justify-center rounded-full p-5 sm:p-5 sm:w-15 sm:h-15 w-35 h-35">
-              <Image  src="/landingPageAssets/money.svg" alt="" width={45} height={45} />
+              <Image
+                src="/landingPageAssets/money.svg"
+                alt=""
+                width={45}
+                height={45}
+              />
             </div>
             <h2 className="font-roboto text-white font-bold text-[21px] lg:text-[28px] leading-tight">
               Need Any Support For
@@ -61,7 +68,12 @@ export default function FOOTER() {
           <div className="flex flex-row items-center justify-center sm:justify-start gap-6">
             {/* <!-- Left side money logo --> */}
             <div className="bg-button flex items-center justify-center rounded-full p-5 sm:p-5 sm:w-15 sm:h-15 w-35 h-35">
-              <Image  src="/landingPageAssets/globe.svg" alt="" width={45} height={45} />
+              <Image
+                src="/landingPageAssets/globe.svg"
+                alt=""
+                width={45}
+                height={45}
+              />
             </div>
             <h2 className="font-roboto text-white font-bold text-[21px] lg:text-[28px] leading-tight">
               Are You Ready For Get
@@ -80,17 +92,21 @@ export default function FOOTER() {
       {/* <!-- services link and newsletter --> */}
       <div className="relative z-10 flex flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 gap-x-4 lg:grid-cols-4 lg:grid-rows-1 lg:mt-[74px] items-start justify-between px-4 space-y-16 lg:space-y-0">
         {/* <!-- background location image --> */}
-        <Image 
+        <Image
           src="/landingPageAssets/footer1-bg-location-img.png"
           alt=""
-          className="absolute -z-10 top-[120px] left-24 lg:left-14 lg:top-[70px]"
+          width={27}
+          height={27}
+          className="absolute -z-10 top-[120px] left-24 lg:left-18 lg:top-[70px] "
         />
         {/* <!-- RouteX logo and social media link --> */}
         <div>
           <div className="flex flex-col">
-            <Image 
+            <Image
               src="/landingPageAssets/logo (1).svg"
               alt=""
+              width={155}
+              height={10}
               className="relative w-[155px] h-10"
             />
             <p className="font-roboto text-white text-[16px] pt-8 leading-7">
@@ -312,9 +328,11 @@ export default function FOOTER() {
             />
             <div className="absolute top-0 mt-9 ml-[300px] sm:ml-[245px] lg:ml-48 z-10">
               <button className="flex items-center justify-center w-14 h-14 rounded-full bg-button">
-                <Image 
+                <Image
                   src="/landingPageAssets/icons8-paper-plane-40.png"
                   alt=""
+                  width={6}
+                  height={6}
                   className="w-6 h-6"
                 />
               </button>
@@ -330,13 +348,13 @@ export default function FOOTER() {
       <div className="flex flex-col lg:flex-row items-stretch justify-between pt-7 pb-7 lg:pt-5 lg:pb-0">
         {/* <!-- left side --> */}
         <div className="flex items-center justify-center space-x-1">
-          <i className="fas fa-copyright text-white/70"></i>
-          <p className="font-roboto text-gray-300 text-[14px] sm:text-[18px] lg:text-[15px]">
-            2024 Routex, All Rights Reserved. Design By RRDevs
-          </p>
+          <i className="fas fa-copyright text-white/70 lg:pl-4">
+          &copy; 2024 Routex, All Rights Reserved. Design By RRDevs
+          </i>
+          
         </div>
         {/* <!-- right side --> */}
-        <div className="flex flex-row items-center justify-center space-x-4 lg:space-x-8 pt-4 font-roboto text-gray-300 text-[13px] sm:text-[15px] lg:text-[15px] px-5">
+        <div className="flex flex-row items-center justify-center space-x-4 lg:space-x-8 pt-4 lg:pt-0 font-roboto text-gray-300 text-[13px] sm:text-[15px] lg:text-[15px] px-5">
           <h2>Trams & Condition</h2>
           <h2>Privacy Policy</h2>
           <h2>Contact Us</h2>

@@ -1,26 +1,26 @@
 "use client";
-import { useEffect } from 'react';
-import Image from 'next/image';
+import { useEffect } from "react";
+import Image from "next/image";
 
 export default function VISASEC() {
+  useEffect(() => {
+    // Load the Feather Icons script
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js";
+    script.onload = () => {
+      if (window.feather) {
+        window.feather.replace(); // Replace <i> tags with SVGs
+      }
+    };
+    document.body.appendChild(script);
 
-    useEffect(() => {
-        // Load the Feather Icons script
-        const script = document.createElement('script');
-        script.src = 'https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js';
-        script.onload = () => {
-          if (window.feather) {
-            window.feather.replace(); // Replace <i> tags with SVGs
-          }
-        };
-        document.body.appendChild(script);
-    
-        // Cleanup the script when the component unmounts
-        return () => {
-          document.body.removeChild(script);
-        };
-      }, []); // Only run once on mount
-      
+    // Cleanup the script when the component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []); // Only run once on mount
+
   return (
     // <!-- Visa section -->
 
@@ -29,7 +29,12 @@ export default function VISASEC() {
         {/* <!-- top header --> */}
         <div className="flex flex-col items-center justify-center pt-16 space-y-3">
           <div className="flex flex-row items-center justify-center gap-1">
-            <Image  src="/landingPageAssets/card-2.3.svg" alt="" />
+            <Image
+              src="/landingPageAssets/card-2.3.svg"
+              alt=""
+              width={25}
+              height={25}
+            />
             <h2 className="font-roboto font-bold text-greenBody text-[14px] sm:text-[16px]">
               VISA CATEGORY
             </h2>
@@ -49,7 +54,7 @@ export default function VISASEC() {
             <div className="flex flex-col sm:flex-row gap-x-14">
               {/* <!-- left side image --> */}
               <div>
-                <Image 
+                <Image
                   src="/landingPageAssets/visa-card-img1.png"
                   alt="Business Visa Image"
                   width={600}
@@ -73,7 +78,12 @@ export default function VISASEC() {
                       className="text-getAnAppointment w-5 h-5 font-bold transition-transform duration-700 -rotate-45 hover:rotate-0 hover:text-white"
                     ></i>
                   </button>
-                  <Image  src="/landingPageAssets/visa-card-right-icon1.png" width={55}  height={55} alt="" />
+                  <Image
+                    src="/landingPageAssets/visa-card-right-icon1.png"
+                    width={55}
+                    height={55}
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -84,7 +94,7 @@ export default function VISASEC() {
             <div className="flex flex-col sm:flex-row gap-x-14">
               {/* <!-- left side image --> */}
               <div>
-                <Image 
+                <Image
                   src="/landingPageAssets/visa-card-img2.png"
                   alt="Business Visa Image"
                   width={600}
@@ -108,7 +118,12 @@ export default function VISASEC() {
                       className="text-getAnAppointment w-5 h-5 font-bold transition-transform duration-700 -rotate-45 hover:rotate-0 hover:text-white"
                     ></i>
                   </button>
-                  <Image  src="/landingPageAssets/visa-card-right-icon2.png" width={55}  height={55} alt="" />
+                  <Image
+                    src="/landingPageAssets/visa-card-right-icon2.png"
+                    width={55}
+                    height={55}
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -119,7 +134,7 @@ export default function VISASEC() {
             <div className="flex flex-col sm:flex-row gap-x-14">
               {/* <!-- left side image --> */}
               <div>
-                <Image 
+                <Image
                   src="/landingPageAssets/visa-card-img3.png"
                   alt="Business Visa Image"
                   width={600}
@@ -143,7 +158,12 @@ export default function VISASEC() {
                       className="text-getAnAppointment w-5 h-5 font-bold transition-transform duration-700 -rotate-45 hover:rotate-0 hover:text-white"
                     ></i>
                   </button>
-                  <Image  src="/landingPageAssets/visa-card-right-icon3.png" width={55}  height={55} alt="" />
+                  <Image
+                    src="/landingPageAssets/visa-card-right-icon3.png"
+                    width={55}
+                    height={55}
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -154,7 +174,7 @@ export default function VISASEC() {
             <div className="flex flex-col sm:flex-row gap-x-14">
               {/* <!-- left side image --> */}
               <div>
-                <Image 
+                <Image
                   src="/landingPageAssets/visa-card-img4.png"
                   alt="Business Visa Image"
                   width={600}
@@ -178,7 +198,12 @@ export default function VISASEC() {
                       className="text-getAnAppointment w-5 h-5 font-bold transition-transform duration-700 -rotate-45 hover:rotate-0 hover:text-white"
                     ></i>
                   </button>
-                  <Image  src="/landingPageAssets/visa-card-right-icon4.png" width={55}  height={55} alt="" />
+                  <Image
+                    src="/landingPageAssets/visa-card-right-icon4.png"
+                    width={55}
+                    height={55}
+                    alt=""
+                  />
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function OURCOACHING() {
   useEffect(() => {
@@ -29,9 +29,11 @@ export default function OURCOACHING() {
         <div className="px-6 relative mx-auto">
           {/* <!-- Div 1 --> */}
           <div className="flex flex-row gap-2 pt-16">
-            <Image 
+            <Image
               src="/landingPageAssets/card-2.3.svg"
               alt=""
+              width={25}
+              height={25}
               className="relative w-[25px] h-[25px]"
             />
             <h2 className="font-roboto font-bold text-[15px] text-greenBody items-center justify-center pt-1">
@@ -114,10 +116,13 @@ export default function OURCOACHING() {
 
             {/* <!-- right image --> */}
             <div className="mt-6 mb-16 lg:mt-16">
-              <Image 
+              <Image
                 src="/landingPageAssets/coaching-right-img-1.png"
                 alt=""
-                className="relative w-[601px] h-[440px] sm:w-[701px] sm:h-[650px] md:w-[361px] md:h-[290px] lg:w-[601px] lg:h-[440px] rounded-[30px]"
+                width={601}
+                height={440}
+                className="relative w-[601px] h-[440px] sm:w-[701px] sm:h-[650px] md:w-[361px] 
+                md:h-[290px] lg:w-[601px] lg:h-[440px] rounded-[30px]"
               />
             </div>
           </div>

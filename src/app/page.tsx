@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import NAVBAR from "./landing-page/1.navigation-bar/page";
 import SUPPORT from "./landing-page/10.supportCoaching/page";
@@ -16,23 +16,16 @@ import VISASEC from "./landing-page/7.visaSection/page";
 import AVAILCOUNTR from "./landing-page/8.availableCountries/page";
 import GETOURBEST from "./landing-page/9.getOurBEstOffers/page";
 
-
 // export default function Home() {
 //   return (
 
-  
 //   );
 // }
 
-
 export default function Home() {
   return (
-
-    //  Full Body after cover grey color 
+    //  Full Body after cover grey color
     <div className="bg-[#F1F5EB] w-full">
-
-  
-
       <NAVBAR />
       <HERO />
       <CARDSHOW />
@@ -48,11 +41,6 @@ export default function Home() {
       <PROCESSOVER />
       <RECENTBLOG />
       <FOOTER />
-
     </div>
   );
 }
-
-
-
-

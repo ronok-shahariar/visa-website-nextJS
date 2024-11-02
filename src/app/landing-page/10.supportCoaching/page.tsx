@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function SUPPORT() {
   useEffect(() => {
@@ -29,9 +29,11 @@ export default function SUPPORT() {
       <div className="relative mx-auto">
         {/* <!-- Div 1 --> */}
         <div className="flex flex-row gap-2 pt-[60px]">
-          <Image 
+          <Image
             src="/landingPageAssets/card-2.3.svg"
             alt=""
+            width={25}
+            height={25}
             className="relative w-[25px] h-[25px]"
           />
           <h2 className="font-roboto font-bold text-[15px] text-greenBody items-center justify-center pt-1">
@@ -73,9 +75,11 @@ export default function SUPPORT() {
           <div className="relative">
             {/* <!-- Image container --> */}
             <div>
-              <Image 
+              <Image
                 src="/landingPageAssets/team-img1.png"
                 alt="Sample Image"
+                width={300}
+                height={400}
                 className="w-full h-auto rounded-lg"
               />
             </div>
@@ -105,10 +109,12 @@ export default function SUPPORT() {
           <div className="relative hidden md:flex lg:visible">
             {/* <!-- Image container --> */}
             <div>
-              <Image 
+              <Image
                 src="/landingPageAssets/team-img2.png"
                 alt="Sample Image"
-                className="w-full h-auto rounded-lg"
+                width={300}
+                height={400}
+                className="w-[400px] h-auto rounded-lg"
               />
             </div>
 
@@ -138,10 +144,12 @@ export default function SUPPORT() {
           <div className="relative hidden lg:flex">
             {/* <!-- Image container --> */}
             <div>
-              <Image 
+              <Image
                 src="/landingPageAssets/team-img3.png"
                 alt="Sample Image"
-                className="w-full h-auto rounded-lg"
+                width={400}
+                height={400}
+                className="w-[400px] h-auto rounded-lg"
               />
             </div>
 

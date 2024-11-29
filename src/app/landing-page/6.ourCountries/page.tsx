@@ -60,7 +60,7 @@ export default function OURCOUNTRY() {
   return (
     // <!-- Our Countries -->
 
-    <section className="bg-greenBody min-h-[850px] mx-auto mt-20 px-6">
+    <section className="bg-greenBody min-h-[850px] mx-auto mt-20 px-6 2xl:px-56">
       {/* <!-- Div 0 --> */}
       <div className="relative mx-auto">
         {/* <!-- Div 1 --> */}

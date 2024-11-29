@@ -31,10 +31,10 @@ export default function FOOTER() {
 
   return (
     // <!-- footer -->
-    <footer className="bg-greenBody min-h-[630px] relative">
+    <footer className="bg-greenBody min-h-[630px] relative 2xl:px-72">
       {/* <!-- Background Image --> */}
       <div
-        className="absolute bottom-0 left-0 w-full h-1/2 bg-bottom bg-contain bg-no-repeat"
+        className="absolute bottom-0 left-0 w-full h-1/2 bg-bottom bg-contain bg-no-repeat xl:bottom-10 xl:h-full"
         style={{
           backgroundImage: "url('/landingPageAssets/footer1-bg-img.png')",
         }}
@@ -63,7 +63,7 @@ export default function FOOTER() {
             </h2>
           </div>
           {/* <!-- middle div side --> */}
-          <div className="hidden lg:flex w-[1px] h-[105px] bg-green-800"></div>
+          <div className="hidden lg:flex w-[1px] h-[105px] bg-green/10"></div>
           {/* <!-- right side --> */}
           <div className="flex flex-row items-center justify-center sm:justify-start gap-6">
             {/* <!-- Left side money logo --> */}
@@ -87,7 +87,7 @@ export default function FOOTER() {
       </div>
 
       {/* <!-- top div side --> */}
-      <div className="w-full h-[1px] bg-green-800 mt-7"></div>
+      <div className="w-full h-[1px] bg-green/10 mt-7"></div>
 
       {/* <!-- services link and newsletter --> */}
       <div className="relative z-10 flex flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 gap-x-4 lg:grid-cols-4 lg:grid-rows-1 lg:mt-[74px] items-start justify-between px-4 space-y-16 lg:space-y-0">
@@ -166,9 +166,9 @@ export default function FOOTER() {
                 <path
                   d="M8 4L16 12L8 20"
                   stroke="#83CD20"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               Mistakes To Avoid
@@ -184,9 +184,9 @@ export default function FOOTER() {
                 <path
                   d="M8 4L16 12L8 20"
                   stroke="#83CD20"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               Your Startup
@@ -202,9 +202,9 @@ export default function FOOTER() {
                 <path
                   d="M8 4L16 12L8 20"
                   stroke="#83CD20"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               Knew About Fonts
@@ -220,9 +220,9 @@ export default function FOOTER() {
                 <path
                   d="M8 4L16 12L8 20"
                   stroke="#83CD20"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               Knew About Fonts
@@ -247,9 +247,9 @@ export default function FOOTER() {
                 <path
                   d="M8 4L16 12L8 20"
                   stroke="#83CD20"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               Latest News
@@ -265,9 +265,9 @@ export default function FOOTER() {
                 <path
                   d="M8 4L16 12L8 20"
                   stroke="#83CD20"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               Careers
@@ -283,9 +283,9 @@ export default function FOOTER() {
                 <path
                   d="M8 4L16 12L8 20"
                   stroke="#83CD20"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               General Inquiries
@@ -301,9 +301,9 @@ export default function FOOTER() {
                 <path
                   d="M8 4L16 12L8 20"
                   stroke="#83CD20"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               Case Studies
@@ -342,7 +342,7 @@ export default function FOOTER() {
       </div>
 
       {/* <!-- bottom div side --> */}
-      <div className="w-full h-[1px] bg-green-800 mt-28 lg:mt-24"></div>
+      <div className="w-full h-[1px] bg-green/10 mt-28 lg:mt-24"></div>
 
       {/* <!-- Bottom Info --> */}
       <div className="flex flex-col lg:flex-row items-stretch justify-between pt-7 pb-7 lg:pt-5 lg:pb-0">

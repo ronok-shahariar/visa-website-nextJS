@@ -23,10 +23,10 @@ export default function OURCOACHING() {
 
   return (
     // <!-- Our coaching -->
-    <section className="bg-white bg-[url('/landingPageAssets/coaching-bg-img.png')] bg-cover bg-center min-h-[850px] md:min-h-[760px] mx-auto backdrop-blur-3xl sm:mt-32 md:mt-6">
-      <div className="bg-white/80 w-full min-h-[850px] md:min-h-[760px]">
+    <section className="bg-white bg-[url('/landingPageAssets/coaching-bg-img.png')] bg-cover bg-center min-h-[850px] md:min-h-[760px] mx-auto backdrop-blur-3xl sm:mt-32 md:mt-6 xl:min-h-[900px] 2xl:w-[86%] 2xl:rounded-[60px]">
+      <div className="bg-white/80 w-full min-h-[850px] md:min-h-[760px] xl:min-h-[900px] 2xl:rounded-[60px]">
         {/* <!-- Div 0 --> */}
-        <div className="px-6 relative mx-auto">
+        <div className="px-6 relative mx-auto xl:px-24 2xl:px-56">
           {/* <!-- Div 1 --> */}
           <div className="flex flex-row gap-2 pt-16">
             <Image

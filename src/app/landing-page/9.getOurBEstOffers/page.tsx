@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function GETOURBEST() {
   return (
     // <!-- Get our best offers quickly -->
-    <section className="min-h-[600px] lg:min-h-[650px]">
+    <section className="min-h-[600px] lg:min-h-[650px] 2xl:px-48">
       <div className="relative flex flex-col lg:flex-row md:flex-row items-center justify-center lg:items-start lg:justify-start pl-4 pr-4">
         {/* <!-- left side --> */}
         <div className="sm:flex sm:items-center sm:justify-center lg:w-[40%]">

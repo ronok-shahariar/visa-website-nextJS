@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function CARDSHOW() {
   return (
     // <!-- Card Show /responsive -->
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mx-3 pt-8 min-h-[500px]">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mx-3 pt-8 min-h-[500px] 2xl:px-10">
       {/* <!-- Box 1 --> */}
 
       <div className="z-[100] border border-gray-300 relative w-full h-full flex flex-col pt-12 pl-8 py-6 pr-8 rounded-[20px]">
@@ -19,7 +19,7 @@ export default function CARDSHOW() {
         </div>
 
         <div className="flex flex-col">
-          <h2 className="font-roboto font-bold text-greenBody text-[22px] pt-9">
+          <h2 className="font-roboto font-bold text-greenBody text-[22px] pt-9 ">
             Food and Wine Tours
           </h2>
           <p className="font-roboto text-gray-500 leading-[1.7] text-justify pt-5">

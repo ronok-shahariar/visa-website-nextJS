@@ -80,9 +80,9 @@ export default function WHYCHOOSEUS() {
   return (
     // <!-- Why Choose us  -->
 
-    <section className="lg:flex lg:mx-auto lg:px-8 lg:gap-x-10 w-full pt-16 overflow-hidden">
+    <section className="lg:flex lg:mx-auto lg:px-8 lg:gap-x-10 w-full pt-16 overflow-hidden 2xl:gap-x-0  2xl:justify-center 2xl:px-44">
       {/* <!-- left section --> */}
-      <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start lg:items-start sm:items-center relative min-h-[500px] gap-10 lg:gap-x-7 lg:w-[50%]">
+      <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start lg:items-start sm:items-center relative min-h-[500px] gap-10 lg:gap-x-7 lg:w-[50%]  2xl:left-48">
         {/* <!-- left side --> */}
         <div className="flex flex-col relative items-center justify-center">
           {/* <!-- left image --> */}
@@ -92,20 +92,23 @@ export default function WHYCHOOSEUS() {
 
             <Image
               src="/landingPageAssets/choose-us-left-img.png"
-              alt=""
+              alt="Choose us image"
               width={310}
-              height={450}
-              className="relative  z-0 rounded-[20px]"
+              height={350}
+              layout="intrinsic" // Preserves the image's natural aspect ratio
+              className="relative z-0 rounded-[20px] object-cover" // object-cover keeps it well-fitted
+              priority={true} // Ensures it loads early for above-the-fold content
             />
           </div>
 
           <div className="flex justify-center items-center pt-10 mb-10">
             <Image
               src="/landingPageAssets/choose-us-circle-img.png"
-              alt=""
+              alt="Choose us circle image"
               width={220}
-              height={220}
-              className="rotate-animation"
+              height={320}
+              layout="intrinsic" // Maintains natural aspect ratio
+              className="rotate-animation object-cover"
             />
           </div>
         </div>
@@ -212,7 +215,7 @@ export default function WHYCHOOSEUS() {
 
       {/* <!-- Right section --> */}
       <div className="relative lg:w-[50%] min-h-[500px] mx-4 space-y-3 pt-10 lg:pt-0">
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 ">
           <Image
             src="/landingPageAssets/card-2.3.svg"
             alt=""
@@ -226,14 +229,14 @@ export default function WHYCHOOSEUS() {
         </div>
         <div className="space-y-4">
           {/* <!-- writting --> */}
-          <h2 className="font-roboto font-bold text-[25px] sm:text-[35px] sm:leading-tight w-full lg:text-[45px] text-greenBody">
+          <h2 className="font-roboto font-bold text-[25px] sm:text-[35px] sm:leading-tight w-full lg:text-[45px] text-greenBody ">
             Where Wanderlust Meets Dream Destinations
           </h2>
           <p className="font-roboto text-gray-500 sm:text-[16.5px] leading-[28px]">
             Et purus duis sollicitudin dignissim habitant. Egestas nulla quis
-            venenatis cras sed eu massa Et purus duis sollicitudin dignissim
-            habitant. Egestas nulla quis venenatis cras sed eu massa Et purus
-            duis sollicitudin dignissim habitant. Egestas nulla
+            venenatis crass spa sed eu massa Et purus duis sollicitudin
+            dignissim habitant. Egestas nulla quis venenatis cras sed eu massa
+            Et purus duis sollicitudin dignissim habitant. Egestas nulla
           </p>
         </div>
 
@@ -333,10 +336,10 @@ export default function WHYCHOOSEUS() {
 
         {/* <!--  button & contact --> */}
 
-        <div className="flex flex-col lg:items-center lg:justify-between sm:flex-row gap-5 mt-7 ml-3">
+        <div className="flex flex-col lg:items-center lg:justify-between sm:flex-row gap-5 mt-7 ml-3 md:">
           {/* <!-- button Read More --> */}
 
-          <div className="w-[70%] lg:w-[50%] h-full mt-5">
+          <div className="w-[70%] lg:w-[50%] md:w-[30%] h-full mt-5">
             <button className="flex flex-row items-center justify-center w-fit lg:w-fit text-greenBody py-[18px] px-[28px] rounded-full border border-getAnAppointment hover:bg-greenBody hover:text-white transition-all duration-200 group">
               <span className="font-roboto text-[16px] lg:text-[17px]">
                 Read More

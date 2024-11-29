@@ -56,7 +56,7 @@ export default function Navbar() {
   return (
     //  <!-- Navigation Bar /responsive  -->
 
-    <nav className="text-green_3 font-roboto w-full px-5 relative z-20">
+    <nav className=" bg-[#F1F5EB] text-green_3 font-roboto w-full px-5 relative z-20 2xl:px-28">
       <div className="flex items-center justify-between w-full py-6">
         {/* Logo */}
 
@@ -220,9 +220,9 @@ export default function Navbar() {
                     <path
                       d="M8 4L16 12L8 20"
                       stroke="#374151"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>
@@ -259,9 +259,9 @@ export default function Navbar() {
                     <path
                       d="M8 4L16 12L8 20"
                       stroke="#374151"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>
@@ -288,9 +288,9 @@ export default function Navbar() {
                     <path
                       d="M8 4L16 12L8 20"
                       stroke="#374151"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>
@@ -317,9 +317,9 @@ export default function Navbar() {
                     <path
                       d="M8 4L16 12L8 20"
                       stroke="#374151"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>
@@ -346,9 +346,9 @@ export default function Navbar() {
                     <path
                       d="M8 4L16 12L8 20"
                       stroke="#374151"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>

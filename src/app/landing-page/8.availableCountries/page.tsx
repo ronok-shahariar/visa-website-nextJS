@@ -7,7 +7,7 @@ export default function AVAILCOUNTR() {
 
     <section className="min-h-[650px]">
       {/* <!-- Div 0 --> */}
-      <div className="relative p-6">
+      <div className="relative p-6 2xl:px-56">
         {/* <!-- Div 1 --> */}
         <div className="flex flex-row gap-2 pt-[30px]">
           <h2 className="font-roboto font-bold text-[18px] text-greenBody items-center justify-center pt-1">

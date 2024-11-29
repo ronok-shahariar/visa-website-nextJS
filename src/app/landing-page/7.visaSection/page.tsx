@@ -48,7 +48,7 @@ export default function VISASEC() {
         </div>
 
         {/* <!-- 4 boxes --> */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 p-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 p-6 2xl:px-56">
           {/* <!-- Box-1 --> */}
           <div className="z-[100] border border-gray-300 relative p-5 rounded-[20px] mt-7 group">
             <div className="flex flex-col sm:flex-row gap-x-14">

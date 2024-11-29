@@ -5,7 +5,7 @@ export default function SCROLCONT() {
   return (
     // <!-- Scrolling Container -->
 
-    <section className="flex w-[88%] h-[50px] mx-auto items-center justify-between mt-14">
+    <section className="flex w-[88%] h-[50px] mx-auto items-center justify-between mt-14 2xl:px-24">
       <div className="scroll-wrapper mx-auto overflow-hidden">
         <div className="flex scroll-container gap-32 h-full">
           {/* <!-- First set of images --> */}

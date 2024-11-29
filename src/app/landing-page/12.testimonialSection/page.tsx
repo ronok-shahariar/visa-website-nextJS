@@ -23,28 +23,28 @@ export default function TESTIMONIAL() {
 
   return (
     // <!-- Testimonial Section ###### lg: starts here -->
-    <section className="min-h-[850px] mx-auto">
-      <div className="flex flex-col lg:flex-row pt-16 px-4 lg:space-x-5 items-center justify-center">
+    <section className="min-h-[700px] mx-auto xl:px-32 2xl:px-64">
+      <div className="flex flex-col lg:flex-row pt-16 px-10 lg:space-x-16 items-center justify-center 2xl:space-x-0 ">
         {/* <!-- left image --> */}
-        <div className="w-[80%]">
+        <div className="w-[80%] 2xl:w-[50%] 2xl:flex 2xl:items-center 2xl:justify-center">
           <Image
             src="/landingPageAssets/testimonial-left-img.png"
             alt=""
             width={500}
             height={700}
-            className="relative w-[700px] md:w-[800px] lg:w-[500px] h-full rounded-[20px]"
+            className="relative w-[700px] md:w-[800px] lg:w-[500px] h-full rounded-[20px] 2xl:w-[500px]"
           />
         </div>
         {/* <!-- right content box --> */}
-        <div className="bg-getAnAppointment flex flex-col items-start justify-between p-7 lg:p-16 w-full rounded-[20px] mt-12 mb-16">
+        <div className="bg-getAnAppointment 2xl:w-[50%] flex flex-col items-start justify-between p-7 lg:p-10 2xl:p-16 w-full rounded-[20px] mt-12 mb-16">
           {/* <!-- top image ## lg: starts from here--> */}
           <Image
             src="/landingPageAssets/testimonial-quote.svg"
             alt=""
-            width={95}
-            height={95}
+            width={50}
+            height={50}
           />
-          <p className="font-roboto text-white text-[22px] sm:text-[32px] lg:text-[30px] lg:leading-[44px]">
+          <p className="font-roboto text-white pt-3 text-[22px] sm:text-[32px] lg:text-[20px] lg:leading-[30px] 2xl:text-[30px] 2xl:leading-[40px]">
             We have been operating for over an providin top-notch services to
             our clients and build strong track record in the industry.We have
             been operating for over a decad providi ina top-notch We have been

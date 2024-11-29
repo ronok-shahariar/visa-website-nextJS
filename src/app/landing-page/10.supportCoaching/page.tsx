@@ -24,7 +24,7 @@ export default function SUPPORT() {
   return (
     // <!-- Support Coaching -->
 
-    <section className="min-h-[700px] mx-auto px-6">
+    <section className="min-h-[700px] mx-auto px-6 2xl:px-56 xl:min-h-[900px]">
       {/* <!-- Div 0 --> */}
       <div className="relative mx-auto">
         {/* <!-- Div 1 --> */}
@@ -114,7 +114,7 @@ export default function SUPPORT() {
                 alt="Sample Image"
                 width={300}
                 height={400}
-                className="w-[400px] h-auto rounded-lg"
+                className="w-[400px] h-auto rounded-lg xl:w-[600px]"
               />
             </div>
 
@@ -149,7 +149,7 @@ export default function SUPPORT() {
                 alt="Sample Image"
                 width={400}
                 height={400}
-                className="w-[400px] h-auto rounded-lg"
+                className="w-[400px] h-auto rounded-lg xl:w-[600px]"
               />
             </div>
 

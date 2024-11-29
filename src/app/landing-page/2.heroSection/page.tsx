@@ -6,10 +6,22 @@ import Link from "next/link";
 export default function HERO() {
   return (
     // <!-- Hero Section /responsive  -->
-    <section className="lg:flex mx-3 min-h-[600px]">
+    <section className="lg:flex mx-3 min-h-[600px] 2xl:px-24">
       <div className="relative lg:flex bg-greenBody rounded-[50px] w-full sm:mt-4 lg:mt-0 mx-auto overflow-hidden">
+
+        {/* <!-- Back Images --> */}
+        <Image
+              src="/landingPageAssets/banner-left-towor.png"
+              alt="Image 3"
+              width={300}
+              height={510}
+              className="absolute hidden 2xl:flex
+                lg:top-20 lg:w-[300px] lg:h-[510px] image-3 object-cover filter saturate-150 brightness-110 contrast-120"
+            />
+
         {/* <!-- Left Side --> */}
-        <div className="relative px-4 pt-8 sm:py-8">
+        <div className="relative px-4 pt-8 sm:py-8 2xl:left-44">
+          
           <div className="flex flex-col">
             <p className="font-roboto font-bold text-white text-[28px] sm:text-[40px] lg:text-[60px] sm:pt-24 pt-[34px] lg:pt-[100px]">
               Visa Made Easy Dreams Made Possible
@@ -62,9 +74,9 @@ export default function HERO() {
         </div>
 
         {/* <!-- Right Side --> */}
-        <div className="w-full max-h-[400px] sm:mt-8">
+        <div className="w-full max-h-[400px] sm:mt-8 2xl:right-20">
           {/* <!-- Image container with overlapping images --> */}
-          <div className="relative w-full mx-auto overflow-hidden">
+          <div className="relative w-full mx-auto overflow-hidden 2xl:left-64">
             {/* <!-- Front Image --> */}
             <Image
               src="/landingPageAssets/frontImage.png"
@@ -74,7 +86,7 @@ export default function HERO() {
               className="relative -top-11 sm:-top-16 w-[300px] h-[550px] sm:w-[400px] sm:h-[550px] sm:left-16 md:left-28 lg:-top-11 lg:left-0 lg:w-[500px] lg:h-[684px] image-1 object-contain"
             />
 
-            {/* <!-- Back Images --> */}
+            {/* <!-- Middle Images --> */}
             <Image
               src="/landingPageAssets/backImage.png"
               alt="Image 2"
@@ -83,13 +95,13 @@ export default function HERO() {
               className="absolute top-52 left-6 w-[310px] h-[310px] sm:left-20 sm:top-28 sm:w-[410px] sm:h-[410px] md:left-32 lg:top-52 lg:left-0 lg:w-[600px] lg:h-[600px] image-2 object-cover filter saturate-100 brightness-90 contrast-70"
               style={{ clipPath: "inset(0 0 10% 0)" }}
             />
-
+            {/* <!-- Back Images --> */}
             <Image
               src="/landingPageAssets/backImage2.png"
               alt="Image 3"
               width={300}
               height={510}
-              className="absolute top-2 w-[500px] h-[410px] -right-24 sm:-top-1 sm:-right-4 sm:w-[400px]
+              className="absolute top-3 w-[300px] h-[400px] right-12 sm:-top-1 sm:-right-4 sm:w-[400px] 2xl:left-80
                sm:h-[410px] md:right-12 lg:top-20 lg:w-[300px] lg:h-[510px] image-3 object-cover filter saturate-150 brightness-110 contrast-120"
             />
           </div>

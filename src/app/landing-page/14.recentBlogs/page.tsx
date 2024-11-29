@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function RECENTBLOG() {
   return (
     // <!-- Recent Blogs -->
-    <section className="min-h-[1040px] mx-auto px-6">
+    <section className="min-h-[1040px] mx-auto px-6 2xl:px-64">
       {/* <!-- Div 0 --> */}
       <div className="relative mx-auto">
         {/* <!-- Div 1 --> */}
